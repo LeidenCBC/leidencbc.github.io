@@ -1,7 +1,7 @@
 ---
 layout: default
-first_name: Peter-Bram
-last_name: 't Hoen
+first_name: "Peter-Bram"
+last_name: "'t Hoen"
 key: hoen
 permalink:
 role: advisor
