@@ -18,9 +18,9 @@ Each entry must have the following structure:
 ```
 ---
 layout: post
-title:
-date:   2017-05-01 12:00:00
-categories: event | award | press | *tbd*
+title: title
+date: 2017-05-01 12:00:00
+categories: one of { event | award | press | *tbd* }
 ---
 Free content.
 ```

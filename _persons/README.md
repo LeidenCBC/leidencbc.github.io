@@ -28,10 +28,11 @@ graduated:
 ```
 
 For a description of the entries see bottom of the page.
-# Creating a collaborator profile
+## Creating a collaborator profile
 
 Use "role: collaborator" for collaborators on papers. Note that this isn't strictly necessary, you can just type the person's full name in the author list, but it might be useful if you're collaborating with a person a lot.
 
+## Complete, documented profile
 ```
 ---
 # layout: use default only for now

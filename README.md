@@ -21,6 +21,8 @@ $ gem install jekyll
 
 Further details on installing Jekyll and its requirements:
 https://jekyllrb.com/docs/installation/
+and instructions for windows:
+https://jekyllrb.com/docs/windows/
 
 
 ## Adding Content
