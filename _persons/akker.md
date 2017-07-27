@@ -6,10 +6,10 @@ key: akker
 permalink: /persons/akker/
 role: faculty
 email: e.b.van_den_akker@lumc.nl
-image: /assets/images/team/akker.jpg
+image: /assets/images/team/akker.png
 organization: Leiden University Medical Center
 position: Assistant Professor
 website: http://www.molepi.nl/en/people/people_item/t/erik_van_den_akker
-interests:
+interests: Omics Data Integration
 graduated:
 ---
