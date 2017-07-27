@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post-content-main">
+<h1><a href="{{ site.baseurl }}/news" style="text-decoration: none;">News <span class="left-icon"><i class="fa fa-rss"></i></a></span></h1>
+  <ul class="post-list">
+      <li class="post-list-item">
+        <div class="row" style="margin-top:1rem;">
+          <div class="post-list-title col-sm-9">{{ page.title }}</div>
+          <div class="post-list-date col-sm-3">{{ page.date | date: "%-d %b %Y" }}</div>
+        </div>
+        <div class="row">
+          <div class="post-list-excerpt">{{ content }}</div>
+        </div>
+      </li>
+  </ul>
+  <div class="all-news-link"><a class="all-news-link" href="{{ site.baseurl }}/news">See All News</a></div>
+</article>

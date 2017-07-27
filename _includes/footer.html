@@ -1,0 +1,76 @@
+<hr/ style="margin-top: 40px;">
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+        <div class="footer-list-social ">
+            <ul class="list-inline">
+                {% if site.email %}
+                <li class="list-inline-item">
+                    <a href="mailto:{{ site.email }}" class="footer-link">
+                        <span class="footer-text"><i class="fa fa-lg fa-envelope-open"></i>&nbsp;{{ site.email }}</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.phone %}
+                <li class="list-inline-item">
+                    <a href="tel:{{ site.phone }}" class="footer-link">
+                      <span class="footer-text">  <i class="fa fa-lg fa-phone"></i>&nbsp;{{ site.phone }}</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.address %}
+                <li class="list-inline-item">
+                    {% if site.address_link %}<a href="{{ site.address_link }}" class="footer-link" target="_blank">{% endif %}
+                        <span class="footer-text"><i class="fa fa-lg fa-map-marker"></i>&nbsp;{{ site.address }}</span>
+                    {% if site.address_link %}</a>{% endif %}
+                </li>
+                {% endif %}
+
+                {% if site.facebook_page %}
+                <li class="list-inline-item">
+                    <a href="https://facebook.com/pages/{{ site.facebook_page }}" class="footer-link" target="_blank">
+                        <span class="footer-text"><i class="fa fa-lg fa-facebook"></i>&nbsp;Facebook</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.twitter_username %}
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/{{ site.twitter_username }}" class="footer-link" target="_blank">
+                        <span class="footer-text"><i class="fa fa-lg fa-twitter"></i>&nbsp;Twitter</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.youtube_username %}
+                <li class="list-inline-item">
+                    <a href="https://www.youtube.com/user/{{ site.youtube_username }}" class="footer-link" target="_blank">
+                        <span class="footer-text"><i class="fa fa-lg fa-youtube"></i>&nbsp;YouTube</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.github_username %}
+                <li class="list-inline-item">
+                    <a href="https://github.com/{{ site.github_username }}" class="footer-link" target="_blank">
+                        <span class="footer-text"><i class="fa fa-lg fa-github"></i>&nbsp;GitHub</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-content">
+      <p>
+        Copyright &copy; 2017 <a href="https://www.lcbc.nl" target="_blank">Leiden Computational Biology Center</a>. All content on this website is licensed under the
+        <a href="http://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">Creative Commons Attribution license (CC BY)</a>.
+        Copyright of the linked papers is with the publishers.
+        The website is based on <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and it's implementation is forked from <a href="https://github.com/visdesignlab/visdesignlab.github.io" target="_blank">The Visual Design Lab</a>.
+      </p>
+    </div>
+  </div>
+</footer>

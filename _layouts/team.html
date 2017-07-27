@@ -1,0 +1,60 @@
+---
+layout: default
+---
+    {% for person in site.persons %}
+      {% if person.graduated == null %}
+        {% if person.role == 'phdstudent' %}
+          {% assign ifphdstudent = 'true' %}
+        {% elsif person.role == 'advisor' %}
+            {% assign ifadvisor = 'true' %}
+        {% elsif person.role == 'postdoc' %}
+            {% assign ifpostdoc = 'true' %}
+        {% elsif person.role == 'msstudent' %}
+            {% assign ifmsstudent = 'true' %}
+        {% elsif person.role == 'undergrad' %}
+            {% assign ifundergrad = 'true' %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  <article class="team-content">
+
+      <h1>Faculty</h1>
+
+      {% include person.html key="reinders" %}
+      {% include person.html key="akker" %}
+      {% include person.html key="mahfouz" %}
+      {% include person.html key="hollt" %}
+
+      {% if ifpostdoc == 'true' %}
+        <h1 style="margin-top: 2rem;">Post-Doctoral Fellows</h1>
+        {% include person.html role="postdoc" %}
+      {% endif %}
+
+      {% if ifphdstudent == 'true' %}
+        <h1 style="margin-top: 2rem;">PhD Students</h1>
+        {% include person.html role="phdstudent" %}
+      {% endif %}
+
+      {% if ifmsstudent == 'true' %}
+        <h1 style="margin-top: 2rem;">Master's Students</h1>
+        {% include person.html role="msstudent" %}
+      {% endif %}
+
+      {% if ifadvisor == 'true' %}
+        <h1 style="margin-top: 2rem;">Advisory Board</h1>
+        {% include person.html role="advisor" %}
+      {% endif %}
+
+      <h1 style="margin-top: 2rem;">Alumni</h1>
+      <p>
+      {% for p in site.persons %}
+        {% if p.graduated %}
+          <span class="alumni">
+              {% if p.website %}<a href="{{ p.website }}" target="_blank">{% endif %}{{ p.first_name }}&nbsp;{{ p.last_name }}{% if p.website %}</a>{% endif %}
+          </span>
+        {% endif %}
+      {% endfor %}
+      </p>
+
+  </article>

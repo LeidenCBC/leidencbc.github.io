@@ -1,0 +1,49 @@
+# Site settings
+title: Leiden Computation Biology Center
+email: "leidencbc@gmail.com"
+description: ""
+baseurl: ""
+url: "http://www.lcbc.nl"
+twitter_username:
+github_username:
+youtube_username:
+facebook_page:
+address: "LUMC - Onderzoekgebouw 2 - S-5-38"
+address_link: "https://www.google.nl/maps/place/Einthovenweg+20,+2333+ZC+Leiden/@52.1666068,4.4749463,19z/data=!3m1!4b1!4m5!3m4!1s0x47c5c6e65b8684a5:0x7421ea2c9476b9c5!8m2!3d52.1666068!4d4.4754935"
+phone: "+31 (0)71 52 69704"
+license_url:
+safe: false
+lsi: false
+google_analytics: ""
+use_analytics: false
+
+paper_content_url: /assets/papers
+
+gems:
+  - jekyll-redirect-from
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+sass:
+  sass_dir: _sass
+
+# exclude from build
+exclude: ["README.md"]
+
+# Collections
+collections:
+  persons:
+    output: true
+    permalink: /persons/:path/
+  publications:
+    output: true
+    permalink: /publications/:path/
+  research:
+    output: true
+    permalink: /research/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/

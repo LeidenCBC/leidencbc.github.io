@@ -1,0 +1,47 @@
+{% for person in site.persons %}
+{% if person.graduated == null %}
+{% if person.key == include.key  or person.role == include.role %}
+<div class="row person-container">
+  {% capture name %}{{ person.first_name }} {{ person.last_name }}{% endcapture %}
+
+  {% if person.role != "alumnus" %}
+
+    <div class="col-md-2">
+      {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
+      <div class="person-pic" style="background: url({{ person.image }});"></div>
+      {% if person.website %}</a>{% endif %}
+    </div>
+
+    <div class=" col-md-10">
+      <div class="row">
+        <div class="col-md-12 mobile-center">
+          <h3>
+            {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
+              {{ name }}
+            {% if person.website %}</a>{% endif %}
+          </h3>
+        </div>
+      </div>
+      {% if person.email %}
+        <div class="row">
+          <div class="col-md-12 mobile-center">
+            <a href="mailto:{{ person.email }}"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a>
+            &nbsp;<a href="mailto:{{ person.email }}">{{ person.email }}</a>
+          </div>
+        </div>
+      {% endif %}
+      {% if person.interests %}
+        <div class="row">
+          <div class="col-md-12 mobile-center">
+            <i class="fa fa-flask" aria-hidden="true"></i>
+            &nbsp;{{ person.interests }}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+  {% endif %}
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}

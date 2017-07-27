@@ -1,0 +1,377 @@
+body {
+  font-size: 1.1em;
+  line-height: 1.9em;
+  font-weight:200;
+  color: #444;
+}
+
+a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+  text-decoration-color: red;
+
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  color: red;
+  background-color: red;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h2, .h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3, h3 a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.alumni, .alumni a {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.alumni {
+  margin-right: 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer-content {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.logo-header {
+  height: 50px;
+}
+
+nav {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#nav-current {
+  color: red;
+}
+
+.nav-link {
+  padding-bottom: 0;
+  text-decoration: none;
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-link {
+    margin-bottom: -35px;
+  }
+}
+
+.footer-link {
+  font-size: 0.7em;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-text {
+  margin: 5px;
+}
+
+.home-container {
+  margin-top: 3rem;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color:white;
+  background-size: 64rem 32rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-indicators li{
+  background-color: #eee;
+  opacity: 0.75;
+}
+
+.carousel-indicators li:hover{
+  opacity: 1.0;
+}
+
+.carousel-indicators .active{
+  background-color: red;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 0.75;
+}
+
+.carousel-control-prev-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
+
+.carousel-control-next-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+}
+
+.carousel-caption {
+  text-align:center !important;
+}
+
+.carousel-caption-inner {
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+}
+
+.carousel-caption-inner a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.75em;
+  opacity: 0.75;
+}
+
+.carousel-caption-inner a:hover {
+  opacity: 1;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #paper-carousel-container {
+    display: none;
+  }
+  .paper-img-container {
+    margin-bottom: 1rem;
+  }
+   .paper-text-container {
+    margin-bottom: 2rem;
+  }
+}
+
+.post-list, .publication-short-list {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+.post-list p {
+  margin-bottom: 0;
+}
+
+.post-list-item {
+  margin-bottom: 1rem
+}
+
+.post-list-title, .post-list-date {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.post-list-title {
+  padding-left: 0;
+  text-align: left;
+}
+
+.post-list-date {
+  padding-right: 0;
+  text-align: right;
+}
+
+.post-list-link {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.paper-list-title, .paper-list-journal, .paper-list-title a{
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.paper-list-title, .paper-list-title a{
+  font-weight: 600;
+}
+
+.paper-list-journal {
+  margin-bottom: 1rem;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.paper-text-container {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+.paper-title-container a {
+  text-decoration: none;
+  color: red;
+  font-weight: 400;
+  font-size: 1em;
+}
+.person-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.person-pic {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 1.5px solid #BBB;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-size: 100px 100px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-content h1 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .person-pic {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  margin-bottom: 1.5rem;
+}
+
+#nav-toggle { position: absolute; left: 0px; top: 35px; }
+#nav-toggle, #nav-toggle:before, #nav-toggle:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 35px;
+	background: red;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle:before {
+  top: -10px;
+}
+#nav-toggle:after {
+  bottom: -10px;
+}
+
+#nav-toggle, #nav-toggle:before, #nav-toggle:after {
+	-o-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+#nav-toggle.active {
+  background-color: transparent;
+}
+#nav-toggle.active:before, #nav-toggle.active:after {
+  top: 0;
+}
+#nav-toggle.active:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active:after {
+  transform: rotate(-45deg);
+}
+
+.paper-row {
+  margin-top: 1.5rem;
+}
+
+.paper-main {
+  padding-left: 0 !important;
+}
+
+.paper-citation {
+  line-height: 0.5em !important;
+}
+
+.paper-title {
+  font-weight: 400;
+}
+
+.paper-side-row {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .container {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    #logo-header-wide {
+      display:none;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+
+    #logo-header-narrow {
+      display:none;
+    }
+}

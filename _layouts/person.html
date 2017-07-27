@@ -1,0 +1,188 @@
+---
+layout: default
+---
+
+<!-- FLAGS TO DETERMINE WHAT TO RENDER -->
+{% for publication in site.publications reversed %}
+{% if publication.type == "preprint" %}
+{% for author in publication.authors %}
+{% if author == page.key %}
+{% assign haspreprints = 'true' %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+{% for publication in site.publications reversed %}
+{% if publication.type == "paper" %}
+{% for author in publication.authors %}
+{% if author == page.key %}
+{% assign haspublications = 'true' %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+{% for talk in site.talks reversed %}
+{% if talk.speaker == page.key %}
+{% assign hastalks = 'true' %}
+{% endif %}
+{% endfor %}
+
+{% for article in site.data.press %}
+{% if article.user == page.key %}
+{% assign haspress = 'true' %}
+{% endif %}
+{% endfor %}
+
+<div class="person">
+    <header class="person-title"><h1>{{page.first_name}} {{page.last_name}}</h1></header>
+
+</div>
+
+
+<article class="publication-content-main">
+
+
+    {{ page.content }}
+
+    {% if hastalks == "true" %}
+    <br>
+    <div stye="width:100%, float:none">
+    <span class="home-button nav-text">
+    <a href="#publications">Publications</a>
+    </span>
+        <span class="home-button nav-text">
+    <a href="#talks">Talks</a>
+    </span>
+        <span class="home-button nav-text">
+    <a href="#teaching">Teaching</a>
+    </span>
+        <span class="home-button nav-text">
+    <a href="#press">Press</a>
+    </span>
+    </div>
+    <br>
+    {% endif %}
+
+
+</article>
+
+
+<article class="publication-content-aside">
+    <img alt="{{ page.first_name }} {{ page.last_name }}" class="person-img color0 person-image-large"
+         title="{{ page.first_name }} {{ page.last_name }}" src="{{ site.paper_content_url }}/{{ page.key }}/{{{ page.image }}">
+    <br>
+
+    {{ page.first_name }} {{ page.last_name }}, {{ page.degree}} <br>
+    {{ page.position}} <br>
+    <p>
+        <b>Contact</b> <br>
+        <a href="mailto:{{ page.email }}"><i class="fa fa-envelope"></i> {{ page.email }}</a> <br>
+        SCI Institute, <br>
+        School of Computing, <br>
+        University of Utah <br>
+        <a target="_blank" href="https://www.google.com/maps/place/Scientific+Computing+and+Imaging+Institute+(SCI+Institute)/@40.7682198,-111.876249,14.58z/data=!4m8!1m2!3m1!2sScientific+Computing+and+Imaging+Institute+(SCI+Institute)!3m4!1s0x0:0xed3af30fcd0bf927!8m2!3d40.7677941!4d-111.8449938"><i class="fa fa-map-marker"></i> 72 South Central Campus Drive,<br>
+            Salt Lake City, Utah 84112 </a><br>
+        {% if page.room %}
+        Room: {{ page.room }}
+        {% endif %}
+    </p>
+
+    <p>
+        {% if page.cv %}
+        <a href="{{page.cv}}" target="_blank"><i class="fa fa-file-text"></i> Curriculum Vitae</a><br>
+        {% endif %}
+        {% if page.gs %}
+        <a href="{{ page.gs }}" target="_blank"><i class="fa fa-google"></i> Google Scholar</a><br>
+        {% endif %}
+        {% if page.twitter %}
+        <a href="http://twitter.com/{{page.twitter}}" target="_blank"><i class="fa fa-twitter"></i> Twitter</a><br>
+        {% endif %}
+        {% if page.github %}
+        <a href="{{page.github}}" target="_blank"><i class="fa fa-github"></i> GitHub</a><br>
+        {% endif %}
+    </p>
+</article>
+
+
+<article  class="publication-content">
+
+    {% if haspublications == "true" or haspreprints == "true" %}
+    <h2 id="publications">Publications</h2>
+
+    {% if haspreprints == "true" %}
+    <h3>Preprints</h3>
+    {% for publication in site.publications reversed %}
+    {% if publication.type == "preprint" %}
+    {% for author in publication.authors %}
+    {% if author == page.key %}
+    {% include publication_list_entry.html %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if haspublications == "true" %}
+    <h3>Peer-reviewed Journal and Conference Publications</h3>
+    {% for publication in site.publications reversed %}
+    {% if publication.type == "paper" %}
+    {% for author in publication.authors %}
+    {% if author == page.key %}
+    {% include publication_list_entry.html %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% endif %}
+
+    {% if hastalks == "true" %}
+    <h2 id="talks">Talks</h2>
+    <h3>Invited Talks</h3>
+    {% for talk in site.talks reversed %}
+    {% if talk.speaker == page.key %}
+    {% if talk.type == "invited" %}
+    {% include talk_entry.html %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <h3>Paper Presentations</h3>
+    {% for talk in site.talks reversed %}
+    {% if talk.speaker == page.key %}
+    {% if talk.type == "paper" %}
+    {% include talk_entry.html %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <h3>Tutorials</h3>
+    {% for talk in site.talks reversed %}
+    {% if talk.speaker == page.key %}
+    {% if talk.type == "tutorial" %}
+    {% include talk_entry.html %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    {% endif %}
+
+    {% if page.showteaching %}
+
+    <h2 id="teaching">Teaching</h2>
+    
+    {% endif %}
+
+
+    {% if haspress == "true" %}
+
+    <h2 id="press">Press</h2>
+
+    {% include press.html user=page.key %}
+
+    {% endif %}
+
+</article>

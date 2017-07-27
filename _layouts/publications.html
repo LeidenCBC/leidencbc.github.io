@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<article class="publications-content">
+  {% for publication in site.publications %}
+    {% if publication.type == "preprint" %}
+      {% assign ifpreprint = 'true' %}
+    {% elsif publication.type == "paper" %}
+      {% assign ifpaper = 'true' %}
+    {% elsif publication.type == "poster" %}
+      {% assign ifposter = 'true' %}
+    {% elsif publication.type == "thesis" %}
+      {% assign ifthesis = 'true' %}
+    {% endif %}
+  {% endfor %}
+
+  {% if ifpreprint %}
+    <h1>Preprints</h1>
+
+    {% for publication in site.publications reversed %}
+      {% if publication.type == "preprint" %}
+        {% include publication_list_entry.html %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if ifpaper %}
+    <h1>Peer-Reviewed Journal and Conference Papers</h1>
+
+    {% for publication in site.publications reversed %}
+      {% if publication.type == "paper" %}
+        {% include publication_list_entry.html %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if ifposter %}
+    <h1>Posters</h1>
+
+    {% for publication in site.publications reversed %}
+      {% if publication.type == "poster" %}
+        {% include publication_list_entry.html %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if ifthesis %}
+    <h1>Theses</h1>
+
+    {% for publication in site.publications reversed %}
+      {% if publication.type == "thesis" %}
+        {% include publication_list_entry.html %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</article>

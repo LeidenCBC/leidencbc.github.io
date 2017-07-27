@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<div class="row paper-row">
+  <div class="col-md-8 paper-main">
+    <p><span class="h2">Abstract:</span> {{ page.abstract }}</p>
+
+    {%if page.award %}
+    <span class="award"><i class="fa fa-diamond"></i>&nbsp;{{ page.award }}</span>
+    {% endif %}
+
+    <p>
+      <h2>Citation</h2>
+      <span class="paper-citation paper-authors">
+        {% for author in page.authors %}
+
+          {% assign known = false %}
+          {% for person in site.persons %}
+            {% if author == person.key %}
+              {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}{{ person.first_name }}&nbsp;{{ person.last_name }}{% if person.website %}</a>{% endif %}{% if author != page.authors.last%}, {% endif %}
+              {% assign known = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if known == false %}
+            {{ author }}{% if author != page.authors.last%}, {% endif %}
+          {% endif %}
+
+        {% endfor %}
+      </span></br>
+      <span class="paper-citation paper-title">{{page.title}}.</span>
+      <span class="paper-citation paper-citation">{{ page.journal }}, {{ page.year }}.</span>
+    </p>
+    {{ content }}
+  </div>
+
+
+  <div class="col-md-4">
+
+    <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{{ site.paper_content_url }}/{{ page.key }}/{{ page.image }}">
+
+    {% if page.external-project %}
+      <h3>Website</h3>
+      <div class="row paper-side-row">
+        <ul class="publication-short-list">
+    		  <li><i class="fa fa-globe"></i> &nbsp;<a class="project-website" href="{{page.external-project}}" target="_blank">{{ page.shortname }} Website</a></li>
+        </ul>
+      </div>
+    {% endif %}
+
+    <h3>Resources</h3>
+    <div class="row paper-side-row">
+      <ul class="publication-short-list">
+        {% if page.doi %}
+  		    <li><i class="fa fa-globe"></i> &nbsp;<a href="https://dx.doi.org/{{ page.doi }}" target="_blank">Publisher</a></li>
+        {% elsif page.publisher %}
+    		  <li><i class="fa fa-globe"></i> &nbsp;<a href="{{ page.publisher }}" target="_blank">Publisher</a></li>
+        {% endif %}
+
+        {% if page.pdf %}
+        <li><i class="fa fa-file-pdf-o"></i> &nbsp;<a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.pdf }}" target="_blank">Preprint (pdf)</a></li>
+        {% endif %}
+
+        {%if page.bibtex %}
+          <li style="margin-bottom: 0.5em"><i class="fa fa-file-o"></i>&nbsp; <a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.bibtex }}" target="_blank">BibTeX</a></li>
+        {% endif %}
+
+
+        {% if page.supplement %}
+        <li><i class="fa fa-file-pdf-o"></i> &nbsp;<a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.supplement }}" target="_blank">Supplement (pdf)</a></li>
+        {% endif %}
+
+        {% if page.supplements %}
+          {% for supplement in page.supplements %}
+            <li>
+              {% if supplement.icon %}<i class="fa fa-file-{{ supplement.icon }}-o"></i>{% else %}<i class="fa fa-file-o"></i>{% endif %}
+              &nbsp;<a href="{% if supplement.abslink %}{{ supplement.abslink }}{% else %}{{site.paper_content_url}}/{{ page.key }}/{{ supplement.link }}{% endif %}" target="_blank">{{supplement.name}}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+
+        {% if page.code %}
+        <li>
+          <i class="fa  fa-code-fork"></i> &nbsp;<a href="{{ page.code }}" target="_blank">Source Code</a>
+        </li>
+        {% endif %}
+    </ul>
+    </div>
+
+    {% if page.videos %}
+      {% capture num_videos %}{{ page.videos | size }}{% endcapture %}
+      {% if num_videos > 1) %}<h3>Videos</h3>{% else %}<h3>Video</h3>{% endif %}
+      {% for video in page.videos %}
+      <div class="row paper-side-row">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/{{video}}?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      {% endfor %}
+    {% endif %}
+
+  </div>
+</div>
