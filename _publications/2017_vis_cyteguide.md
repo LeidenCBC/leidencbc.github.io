@@ -26,11 +26,18 @@ project:
 external-project: https://cyteguide.cytosplore.org/
 
 videos:
+- 227802819
 - 223373844
 
 pdf: 2017_vis_cyteguide.pdf
 supplement:
 supplements:
+  - name: Video
+    abslink: https://vimeo.com/223373844
+    icon: video
+  - name: Fast Forward Video
+    abslink: https://vimeo.com/227802819
+    icon: video
 code:
 
 bibtex: 2017_vis_cyteguide.bib
