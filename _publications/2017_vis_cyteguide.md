@@ -3,7 +3,7 @@ layout: publication
 title: "CyteGuide: Visual Guidance for Hierarchical Single-Cell Analysis"
 key: 2017_vis_cyteguide
 permalink: /publications/2017_vis_cyteguide/
-type: paper
+type: article
 shortname: CyteGuide
 image: 2017_vis_cyteguide.png
 image_large: 2017_vis_cyteguide_teaser.png
@@ -16,9 +16,17 @@ authors:
 - lelieveldt
 - vilanova
 
-journal: IEEE Transactions on Visualization and Computer Graphics (Proceedings of IEEE InfoVis 2017), vol. 24, no. 1, to appear
+journal: IEEE Transactions on Visualization and Computer Graphics (Proceedings of IEEE InfoVis 2017)
 journal-short: TVCG (InfoVis '17)
+page_start:
+page_end:
+chapter:
+volume: 24
+issue: 1
 year: 2018
+editor:
+publisher:
+school:
 award:
 
 doi:

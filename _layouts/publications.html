@@ -5,7 +5,7 @@ layout: default
   {% for publication in site.publications %}
     {% if publication.type == "preprint" %}
       {% assign ifpreprint = 'true' %}
-    {% elsif publication.type == "paper" %}
+    {% elsif (publication.type == "inproceedings" or publication.type == "article") %}
       {% assign ifpaper = 'true' %}
     {% elsif publication.type == "poster" %}
       {% assign ifposter = 'true' %}
@@ -28,7 +28,7 @@ layout: default
     <h1>Peer-Reviewed Journal and Conference Papers</h1>
 
     {% for publication in site.publications reversed %}
-      {% if publication.type == "paper" %}
+      {% if (publication.type == "inproceedings" or publication.type == "article") %}
         {% include publication_list_entry.html %}
       {% endif %}
     {% endfor %}

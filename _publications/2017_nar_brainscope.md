@@ -3,7 +3,7 @@ layout: publication
 title: "BrainScope: interactive visual exploration of the spatial and temporal human brain transcriptome"
 key: 2017_nar_brainscope
 permalink: /publications/2017_nar_brainscope/
-type: paper
+type: article
 shortname: BrainScope
 image: 2017_nar_brainscope.png
 image_large: 2017_nar_brainscope_teaser.png
@@ -19,13 +19,20 @@ authors:
 - reinders
 - lelieveldt
 
-journal: Nucleic Acids Research, gkx046
+journal: Nucleic Acids Research
 journal-short: NAR
+page_start: 1
+page_end: 11
+chapter:
+volume: gkx046
+issue:
 year: 2017
+editor:
+publisher:
+school:
 award: Selected for a highlight talk @ BioVis 2017
 
 doi: 10.1093/nar/gkx046
-publisher:
 project:
 external-project: http://www.brainscope.nl
 videos:

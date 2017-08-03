@@ -3,7 +3,7 @@ layout: publication
 title: "Brain Transcriptome Atlases: A Computational Perspective"
 key: 2017_bsaf_review
 permalink: /publications/2017_bsaf_review/
-type: paper
+type: article
 shortname: Brain Transcriptome Atlases
 image: 2017_bsaf_review.jpg
 image_large: 2017_bsaf_review_teaser.jpg
@@ -14,13 +14,20 @@ authors:
 - lelieveldt
 - reinders
 
-journal: Brain Structure and Function, 222, 1–24 (2016)
+journal: Brain Structure and Function
 journal-short: BSAF
-year: 2017
+page_start: 1
+page_end: 24
+chapter:
+volume: 222
+issue:
+year: 2016
+editor:
+publisher:
+school:
 award:
 
 doi: 10.1007/s00429-016-1338-2
-publisher:
 project:
 external-project:
 videos:

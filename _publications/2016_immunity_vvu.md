@@ -3,7 +3,7 @@ layout: publication
 title: "Mass Cytometry of the Human Mucosal Immune System Identifies Tissue- and Disease-Associated Immune Subsets"
 key: 2016_immunity_vvu
 permalink: /publications/2016_immunity_vvu/
-type: paper
+type: article
 shortname: Mass Cytometry of the Human Mucosal Immune System
 image: 2016_immunity_vvu.png
 image_large: 2016_immunity_vvu_teaser.png
@@ -22,9 +22,17 @@ authors:
 - lelieveldt
 - koning
 
-journal: Immunity, vol. 44, no. 5, pp. 1227&mdash;1239
+journal: Immunity
 journal-short: Immunity
+page_start: 1227
+page_end: 1239
+chapter:
+volume: 44
+issue: 5
 year: 2016
+editor:
+publisher:
+school:
 award: LUMC Best Article Prize 2016 (non clinical)
 
 doi: 10.1016/j.immuni.2016.04.014

@@ -27,6 +27,5 @@ If there's multiple files of the same type, the "secondary" type is specified wi
  3. Upload you paper video (if you have one) to vimeo and use the id in your paper.md
  4. Add the following files to `/assets/papers/YYYY_CONFSHORTNAME_PAPERSHORTNAME`
     * Paper PDF (KEY.pdf) - *mandatory*
-    * thumbnail figure (KEY.png) - *mandatory*
-    * bibtex file (KEY.bib) - *to be removed, but mandatory for now*    
+    * thumbnail figure (KEY.png) - *mandatory*  
     * Supplementary Material PDF (KEY_supplement.pdf)

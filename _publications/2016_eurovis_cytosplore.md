@@ -4,8 +4,8 @@ layout: publication
 title: "Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets"
 key: 2016_eurovis_cytosplore
 permalink: /publications/2016_eurovis_cytosplore/
-# Options are paper | poster | preprint | thesis
-type: paper
+# Options are article | inproceedings  | book | inbook | poster | preprint | phdthesis | mscthesis
+type: article
 
 # The shortname is used for auto-generated titels
 shortname: Cytosplore
@@ -25,9 +25,27 @@ authors:
 - lelieveldt
 - vilanova
 
-journal: Computer Graphics Forum (Proceedings of EuroVis 2016), vol. 35, no. 3, pp 171&mdash;180
+# different entries are required here, for different classes (in parentheses; optional for bibTeX but add them if available):
+# article: journal, year (page_start, page_end, volume, issue)
+# inproceedings: journal (is converted to booktitle), year (page_start, page_end)
+# book: editor, publisher, year
+# inbook: editor, chapter and/or pages, publisher, year
+# poster
+# preprint: journal (+ preprint server)
+# phdthesis: school, year
+# mscthesis: school, year
+
+journal: Computer Graphics Forum (Proceedings of EuroVis 2016)
 journal-short: CGF (EuroVis '16)
+page_start: 171
+page_end: 180
+chapter:
+volume: 35
+issue: 3
 year: 2016
+editor:
+publisher:
+school:
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
