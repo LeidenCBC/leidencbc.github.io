@@ -9,18 +9,17 @@ image: 2017_endo_neurod.png
 image_large:
 
 authors:
-- Else Eising
-- Reinald Shyti
-- hoen
-- Lisanne S. Vijfhuizen
-- huisman
-- Ludo A. M. Broos
+- Lisa van Weert
+- Jacobus C. Buurstede
 - mahfouz
-- reinders
-- Michel D. Ferrari
-- Else A. Tolner
-- Boukje de Vries
-- Arn M. J. M. van den Maagdenberg
+- Pamela S.M. Braakhuis
+- J. Annelies E. Polman
+- Hetty C.M. Sips
+- Benno Roozendaal
+- Judit Balog
+- E. Ronald de Kloet
+- Nicole A. Datson
+- Onno C. Meijer
 
 journal: Endocrinology
 journal-short: Endocrinology
