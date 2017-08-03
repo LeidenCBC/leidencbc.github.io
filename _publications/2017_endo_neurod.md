@@ -19,7 +19,7 @@ authors:
 - Judit Balog
 - E. Ronald de Kloet
 - Nicole A. Datson
-- Onno C. Meijer
+- meijer
 
 journal: Endocrinology
 journal-short: Endocrinology
