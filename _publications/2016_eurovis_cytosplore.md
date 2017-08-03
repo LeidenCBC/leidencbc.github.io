@@ -30,7 +30,7 @@ authors:
 # inproceedings: journal (is converted to booktitle), year (page_start, page_end)
 # book: editor, publisher, year
 # inbook: editor, chapter and/or pages, publisher, year
-# poster
+# poster: journal, year, put the conference into the journal field
 # preprint: journal (+ preprint server)
 # phdthesis: school, year
 # mscthesis: school, year
@@ -51,7 +51,7 @@ award:
 
 doi: 10.1111/cgf.12893
 # The publisher URL - use only if no doi is available
-publisher:
+publisher-url:
 
 # Use if this paper is linked to an internal project. This will link to the project site (not used right now)
 project:
@@ -87,8 +87,6 @@ supplements:
 
 # Link to the repository where the code is hosted
 code:
-
-bibtex: 2016_eurovis_cytosplore.bib
 
 abstract: "To understand how the immune system works, one needs to have a clear picture of its cellular compositon and the cells’ corresponding properties and functionality. Mass cytometry is a novel technique to determine the properties of single-cells with unprecedented detail. This amount of detail allows for much finer differentiation but also comes at the cost of more complex analysis. In this work, we present Cytosplore, implementing an interactive workflow to analyze mass cytometry data in an integrated system, providing multiple linked views, showing different levels of detail and enabling the rapid definition of known and unknown cell types. Cytosplore handles millions of cells, each represented as a high-dimensional data point, facilitates hypothesis generation and confirmation, and provides a significant speed up of the current workflow. We show the effectiveness of Cytosplore in a case study evaluation."
 

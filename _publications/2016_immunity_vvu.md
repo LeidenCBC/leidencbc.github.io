@@ -36,7 +36,8 @@ school:
 award: LUMC Best Article Prize 2016 (non clinical)
 
 doi: 10.1016/j.immuni.2016.04.014
-publisher:
+publisher-url:
+
 project:
 external-project:
 videos:
@@ -45,8 +46,6 @@ pdf: 2016_immunity_vvu.pdf
 supplement: 2016_immunity_vvu_supplement.pdf
 supplements:
 code:
-
-bibtex: 2016_immunity_vvu.bib
 
 abstract: "Inflammatory intestinal diseases are characterized by abnormal immune responses and affect distinct locations of the gastrointestinal tract. Although the role of several immune subsets in driving intestinal pathology has been studied, a system-wide approach that simultaneously interrogates all major lineages on a single-cell basis is lacking. We used high-dimensional mass cytometry to generate a system-wide view of the human mucosal immune system in health and disease. We distinguished 142 immune subsets and through computational applications found distinct immune subsets in peripheral blood mononuclear cells and intestinal biopsies that distinguished patients from controls. In addition, mucosal lymphoid malignancies were readily detected as well as precursors from which these likely derived. These findings indicate that an integrated high-dimensional analysis of the entire immune system can identify immune subsets associated with the pathogenesis of complex intestinal disorders. This might have implications for diagnostic procedures, immune-monitoring, and treatment of intestinal diseases and mucosal malignancies."
 

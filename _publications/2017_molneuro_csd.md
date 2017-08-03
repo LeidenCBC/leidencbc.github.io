@@ -23,7 +23,7 @@ authors:
 - Arn M. J. M. van den Maagdenberg
 
 journal: Molecular Neurobiology
-journal-short: Mol Neurobiol.
+journal-short: Mol. Neurobiol.
 page_start: 2986
 page_end: 2996
 chapter:
@@ -37,7 +37,8 @@ award:
 
 
 doi: 10.1007/s12035-015-9681-5
-publisher:
+publisher-url:
+
 project:
 external-project:
 videos:

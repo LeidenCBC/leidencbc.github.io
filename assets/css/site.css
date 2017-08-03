@@ -375,3 +375,7 @@ footer {
       display:none;
     }
 }
+
+.paper-journal {
+  font-style: italic;
+}

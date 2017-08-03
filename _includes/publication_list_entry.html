@@ -35,7 +35,18 @@
 			<a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a>
 		</div>
 		<div class="row paper-journal-container">
-			{{ publication.journal }}, {{publication.year}}
+			{% if publication.type == "article" %}
+      	{{ publication.journal }},
+      {% elsif publication.type == "inproceedings" %}
+  			In {{ publication.journal }},
+      {% elsif (publication.type == "book" or publication.type == "inbook") %}
+  			{{ publication.publisher }},
+      {% elsif (publication.type == "phdthesis" or publication.type == "mscthesis") %}
+  			{{ publication.school }},
+      {% else %}
+  			{{ publication.journal }},
+      {% endif %}
+			{{publication.year}}
 		</div>
 		{%if publication.award %}
 			<div class="row paper-title-container">

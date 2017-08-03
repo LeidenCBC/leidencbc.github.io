@@ -18,19 +18,48 @@ layout: default
           {% assign known = false %}
           {% for person in site.persons %}
             {% if author == person.key %}
-              {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}{{ person.first_name }}&nbsp;{{ person.last_name }}{% if person.website %}</a>{% endif %}{% if author != page.authors.last%}, {% endif %}
+              {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}{{ person.first_name }}&nbsp;{{ person.last_name }}{% if person.website %}</a>{% endif %}{% if author != page.authors.last%}, {% else %}. {% endif %}
               {% assign known = true %}
             {% endif %}
           {% endfor %}
 
           {% if known == false %}
-            {{ author }}{% if author != page.authors.last%}, {% endif %}
+            {{ author }}{% if author != page.authors.last%}, {% else %}. {% endif %}
           {% endif %}
 
         {% endfor %}
-      </span></br>
+      </span>
       <span class="paper-citation paper-title">{{page.title}}.</span>
-      <span class="paper-citation paper-citation">{{ page.journal }}, {{ page.year }}.</span>
+
+      {% if page.type == "article" %}
+      	<span class="paper-citation paper-journal">{{ page.journal }},</span>
+      {% elsif page.type == "inproceedings" %}
+  			In {{ page.journal }},
+      {% elsif (page.type == "book" or page.type == "inbook") %}
+  			{{ page.publisher }},
+      {% elsif (page.type == "phdthesis" or page.type == "mscthesis") %}
+  			{{ page.school }},
+      {% else %}
+  			{{ page.journal }},
+      {% endif %}
+
+      {% if page.volume %}
+				{{ page.volume }}{% if page.issue %}({{ page.issue }}){% endif %}:
+      {% endif %}
+
+      {% if page.chapter %}
+				chapter {{ page.chapter }},
+      {% endif %}
+
+      {% if page.page_start and page.page_end %}
+  			<span class="paper-citation paper-pages">
+  				pp. {{ page.page_start }}&ndash;{{ page.page_end }},
+  			</span>
+      {% elsif page.page_start %}
+				p. {{ page.page_start }},
+      {% endif %}
+
+      <span class="paper-citation paper-year">{{ page.year }}.</span>
     </p>
     {{ content }}
   </div>
@@ -59,13 +88,8 @@ layout: default
         {% endif %}
 
         {% if page.pdf %}
-        <li><i class="fa fa-file-pdf-o"></i> &nbsp;<a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.pdf }}" target="_blank">Preprint (pdf)</a></li>
+        <li style="margin-bottom: 0.5em"><i class="fa fa-file-pdf-o"></i> &nbsp;<a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.pdf }}" target="_blank">Preprint (pdf)</a></li>
         {% endif %}
-
-        {%if page.bibtex %}
-          <li style="margin-bottom: 0.5em"><i class="fa fa-file-o"></i>&nbsp; <a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.bibtex }}" target="_blank">BibTeX</a></li>
-        {% endif %}
-
 
         {% if page.supplement %}
         <li><i class="fa fa-file-pdf-o"></i> &nbsp;<a href="{{site.paper_content_url}}/{{ page.key }}/{{ page.supplement }}" target="_blank">Supplement (pdf)</a></li>
