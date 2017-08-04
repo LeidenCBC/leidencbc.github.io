@@ -4,7 +4,7 @@
 			<img alt="{{ publication.shortname }} screenshot"
 				class="paper-image-small"
 				style="width: 100%;"
-				src="{{ site.paper_content_url }}/{{ publication.key }}/{{ publication.image }}">
+				src="{% if publication.image %}{{ site.paper_content_url }}/{{ publication.key }}/{{ publication.image }}{% else %}/assets/images/placeholder.png{% endif %}">
 			</a>
 	</div>
 	<div class="paper-text-container col-md-9">

@@ -35,9 +35,9 @@ layout: default
       	<span class="paper-citation paper-journal">{{ page.journal }},</span>
       {% elsif page.type == "inproceedings" %}
   			In {{ page.journal }},
-      {% elsif (page.type == "book" or page.type == "inbook") %}
+      {% elsif page.type == "book" or page.type == "inbook" %}
   			{{ page.publisher }},
-      {% elsif (page.type == "phdthesis" or page.type == "mscthesis") %}
+      {% elsif page.type == "phdthesis" or page.type == "mscthesis" %}
   			{{ page.school }},
       {% else %}
   			{{ page.journal }},
@@ -61,6 +61,7 @@ layout: default
 
       <span class="paper-citation paper-year">{{ page.year }}.</span>
     </p>
+
     {{ content }}
   </div>
 
@@ -113,8 +114,7 @@ layout: default
     </div>
 
     {% if page.videos %}
-      {% capture num_videos %}{{ page.videos | size }}{% endcapture %}
-      {% if num_videos > 1) %}<h3>Videos</h3>{% else %}<h3>Video</h3>{% endif %}
+      {% if  page.videos.size > 1 %}<h3>Videos</h3>{% else %}<h3>Video</h3>{% endif %}
       {% for video in page.videos %}
       <div class="row paper-side-row">
         <div class="embed-responsive embed-responsive-16by9">

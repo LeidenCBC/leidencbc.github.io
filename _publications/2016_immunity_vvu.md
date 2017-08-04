@@ -6,7 +6,7 @@ permalink: /publications/2016_immunity_vvu/
 type: article
 shortname: Mass Cytometry of the Human Mucosal Immune System
 image: 2016_immunity_vvu.png
-image_large: 2016_immunity_vvu_teaser.png
+image_large:
 
 authors:
 - vanunen
