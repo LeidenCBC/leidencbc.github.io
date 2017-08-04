@@ -10,57 +10,168 @@ layout: default
     <span class="award"><i class="fa fa-diamond"></i>&nbsp;{{ page.award }}</span>
     {% endif %}
 
-    <p>
-      <h2>Citation</h2>
-      <span class="paper-citation paper-authors">
-        {% for author in page.authors %}
+    <div id="accordion" role="tablist" aria-multiselectable="true" style="margin-top: 1rem">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h2 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Citation
+            </a>
+          </h2>
+        </div>
 
-          {% assign known = false %}
-          {% for person in site.persons %}
-            {% if author == person.key %}
-              {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}{{ person.first_name }}&nbsp;{{ person.last_name }}{% if person.website %}</a>{% endif %}{% if author != page.authors.last%}, {% else %}. {% endif %}
-              {% assign known = true %}
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+            <span class="paper-citation paper-authors">
+              {% for author in page.authors %}
+
+                {% assign known = false %}
+                {% for person in site.persons %}
+                  {% if author == person.key %}
+                    {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}{{ person.first_name }}&nbsp;{{ person.last_name }}{% if person.website %}</a>{% endif %}{% if author != page.authors.last%}, {% else %}. {% endif %}
+                    {% assign known = true %}
+                  {% endif %}
+                {% endfor %}
+
+                {% if known == false %}
+                  {{ author }}{% if author != page.authors.last%}, {% else %}. {% endif %}
+                {% endif %}
+
+              {% endfor %}
+            </span>
+            <span class="paper-citation paper-title">{{page.title}}.</span>
+
+            {% if page.type == "article" %}
+            	<span class="paper-citation paper-journal">{{ page.journal }},</span>
+            {% elsif page.type == "inproceedings" %}
+        			In {{ page.journal }},
+            {% elsif page.type == "book" or page.type == "inbook" %}
+        			{{ page.publisher }},
+            {% elsif page.type == "phdthesis" or page.type == "mscthesis" %}
+        			{{ page.school }},
+            {% else %}
+        			{{ page.journal }},
             {% endif %}
-          {% endfor %}
 
-          {% if known == false %}
-            {{ author }}{% if author != page.authors.last%}, {% else %}. {% endif %}
-          {% endif %}
+            {% if page.volume %}
+      				{{ page.volume }}{% if page.issue %}({{ page.issue }}){% endif %}:
+            {% endif %}
 
-        {% endfor %}
-      </span>
-      <span class="paper-citation paper-title">{{page.title}}.</span>
+            {% if page.chapter %}
+      				chapter {{ page.chapter }},
+            {% endif %}
 
-      {% if page.type == "article" %}
-      	<span class="paper-citation paper-journal">{{ page.journal }},</span>
-      {% elsif page.type == "inproceedings" %}
-  			In {{ page.journal }},
-      {% elsif page.type == "book" or page.type == "inbook" %}
-  			{{ page.publisher }},
-      {% elsif page.type == "phdthesis" or page.type == "mscthesis" %}
-  			{{ page.school }},
-      {% else %}
-  			{{ page.journal }},
-      {% endif %}
+            {% if page.page_start and page.page_end %}
+        			<span class="paper-citation paper-pages">
+        				pp. {{ page.page_start }}&ndash;{{ page.page_end }},
+        			</span>
+            {% elsif page.page_start %}
+      				p. {{ page.page_start }},
+            {% endif %}
 
-      {% if page.volume %}
-				{{ page.volume }}{% if page.issue %}({{ page.issue }}){% endif %}:
-      {% endif %}
+            <span class="paper-citation paper-year">{{ page.year }}.</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+          <h2 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              BibTeX
+            </a>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-block bibtex">
+            {% if page.type == "article" or page.type == "preprint" %}
+            	@article
+            {% elsif page.type == "inproceedings" %}
+            	@inproceedings
+            {% elsif page.type == "inbook" %}
+            	@inbook
+            {% elsif page.type == "book" %}
+            	@book
+            {% elsif page.type == "masters" %}
+            	@mastersthesis
+            {% elsif page.type == "phd" %}
+            	@phdthesis
+            {% else %}
+            	@misc
+            {% endif %}
+        		{ bib:{{ page.key }}<br/>
 
-      {% if page.chapter %}
-				chapter {{ page.chapter }},
-      {% endif %}
+            <div style="margin-left: 35px;">
 
-      {% if page.page_start and page.page_end %}
-  			<span class="paper-citation paper-pages">
-  				pp. {{ page.page_start }}&ndash;{{ page.page_end }},
-  			</span>
-      {% elsif page.page_start %}
-				p. {{ page.page_start }},
-      {% endif %}
+        			author = {
 
-      <span class="paper-citation paper-year">{{ page.year }}.</span>
-    </p>
+                {% for author in page.authors %}
+
+                  {% assign known = false %}
+                  {% for person in site.persons %}
+                    {% if author == person.key %}
+                      {% include /functions/replace_umlauts.html input=person.first_name %} {% include /functions/replace_umlauts.html input=person.last_name %}
+                      {% if author != page.authors.last%} and {% endif %}
+                      {% assign known = true %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if known == false %}
+                  {% include /functions/replace_umlauts.html input=author %}
+                    {% if author != page.authors.last%} and {% endif %}
+                  {% endif %}
+
+                {% endfor %}
+               },<br/>
+        			title = { {{ page.title }} },<br/>
+
+        			{% if page.type == "article" %}
+        	    	journal = { {{ page.journal }} },<br/>
+        	    {% elsif page.type == "inproceedings" %}
+        	    	booktitle = { {{ page.journal }} },<br/>
+        	    {% elsif page.type == "poster" %}
+        	    	howpublished = { {{ page.journal }} },<br/>
+        	    {% endif %}
+
+        			{% if page.volume %}
+        	    	volume = { {{ page.volume }} },<br/>
+        	    {% endif %}
+
+        			{% if page.issue %}
+        	    	number = { {{ page.issue }} },<br/>
+        	    {% endif %}
+
+        			{% if page.page_start %}
+        	    	pages = { {{ page.page_start }}
+        				{% if page.page_end %} -- {{ page.page_end }} {% endif %}
+        				},<br/>
+        	    {% endif %}
+
+              {% if page.editor %}
+        				editor = { {{ page.editor }} },<br/>
+              {% endif %}
+
+              {% if page.publisher %}
+        				publisher = { {{ page.publisher }} },<br/>
+              {% endif %}
+
+        			{% if page.school %}
+        				school = { {% include /functions/replace_umlauts.html input=page.school %} },<br/>
+        	    {% endif %}
+
+        			{% if page.year %}
+        	    	year = { {{ page.year }} },<br/>
+        	    {% endif %}
+
+        			{% if page.doi %}
+        	    	doi = { {{ page.doi }} },<br/>
+        	    {% endif %}
+
+            </div>
+          	}
+          </div>
+        </div>
+      </div>
+    </div>
 
     {{ content }}
   </div>
