@@ -112,7 +112,7 @@ nav {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 600px;
   background-color:white;
   background-size: 64rem 32rem;
   background-repeat: no-repeat;
@@ -165,6 +165,30 @@ nav {
 
 .carousel-caption-inner a:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 1199px) {
+  .carousel-item {
+    height: 465px;
+    width: 930px;
+    background-size: 930px 465px;
+  }
+
+  .carousel-caption-inner a {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .carousel-item {
+    height: 345px;
+    width: 690px;
+    background-size: 690px 345px;
+  }
+
+  .carousel-caption-inner a {
+    font-size: 1.2rem;
+  }
 }
 
 footer {
