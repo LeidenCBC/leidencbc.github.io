@@ -5,11 +5,13 @@ layout: default
   {% for publication in site.publications %}
     {% if publication.type == "preprint" %}
       {% assign ifpreprint = 'true' %}
-    {% elsif publication.type == "paper" %}
+    {% elsif publication.type == "inproceedings" or publication.type == "article" %}
       {% assign ifpaper = 'true' %}
+    {% elsif publication.type == "book" or publication.type == "inbook" %}
+      {% assign ifbook = 'true' %}
     {% elsif publication.type == "poster" %}
       {% assign ifposter = 'true' %}
-    {% elsif publication.type == "thesis" %}
+    {% elsif publication.type == "mscthesis" or publication.type == "pdfthesis" %}
       {% assign ifthesis = 'true' %}
     {% endif %}
   {% endfor %}
@@ -28,7 +30,17 @@ layout: default
     <h1>Peer-Reviewed Journal and Conference Papers</h1>
 
     {% for publication in site.publications reversed %}
-      {% if publication.type == "paper" %}
+      {% if publication.type == "inproceedings" or publication.type == "article" %}
+        {% include publication_list_entry.html %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if ifbook %}
+    <h1>Books & Book Chapters</h1>
+
+    {% for publication in site.publications reversed %}
+      {% if publication.type == "book" or publication.type == "inbook" %}
         {% include publication_list_entry.html %}
       {% endif %}
     {% endfor %}
@@ -48,7 +60,7 @@ layout: default
     <h1>Theses</h1>
 
     {% for publication in site.publications reversed %}
-      {% if publication.type == "thesis" %}
+      {% if publication.type == "mscthesis" or publication.type == "phdthesis" %}
         {% include publication_list_entry.html %}
       {% endif %}
     {% endfor %}

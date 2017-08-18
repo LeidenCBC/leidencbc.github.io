@@ -4,8 +4,8 @@ layout: publication
 title: "Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets"
 key: 2016_eurovis_cytosplore
 permalink: /publications/2016_eurovis_cytosplore/
-# Options are paper | poster | preprint | thesis
-type: paper
+# Options are article | inproceedings  | book | inbook | poster | preprint | phdthesis | mscthesis
+type: article
 
 # The shortname is used for auto-generated titels
 shortname: Cytosplore
@@ -25,15 +25,33 @@ authors:
 - lelieveldt
 - vilanova
 
-journal: Computer Graphics Forum (Proceedings of EuroVis 2016), vol. 35, no. 3, pp 171&mdash;180
+# different entries are required here, for different classes (in parentheses; optional for bibTeX but add them if available):
+# article: journal, year (page_start, page_end, volume, issue)
+# inproceedings: journal (is converted to booktitle), year (page_start, page_end)
+# book: editor, publisher, year
+# inbook: editor, chapter and/or pages, publisher, year
+# poster: journal, year, put the conference into the journal field
+# preprint: journal (+ preprint server)
+# phdthesis: school, year
+# mscthesis: school, year
+
+journal: Computer Graphics Forum (Proceedings of EuroVis 2016)
 journal-short: CGF (EuroVis '16)
+page_start: 171
+page_end: 180
+chapter:
+volume: 35
+issue: 3
 year: 2016
+editor:
+publisher:
+school:
 # Add things like "Best Paper Award at InfoVis 2099, selected out of 4000 submissions"
 award:
 
 doi: 10.1111/cgf.12893
 # The publisher URL - use only if no doi is available
-publisher:
+publisher-url:
 
 # Use if this paper is linked to an internal project. This will link to the project site (not used right now)
 project:
@@ -69,8 +87,6 @@ supplements:
 
 # Link to the repository where the code is hosted
 code:
-
-bibtex: 2016_eurovis_cytosplore.bib
 
 abstract: "To understand how the immune system works, one needs to have a clear picture of its cellular compositon and the cells’ corresponding properties and functionality. Mass cytometry is a novel technique to determine the properties of single-cells with unprecedented detail. This amount of detail allows for much finer differentiation but also comes at the cost of more complex analysis. In this work, we present Cytosplore, implementing an interactive workflow to analyze mass cytometry data in an integrated system, providing multiple linked views, showing different levels of detail and enabling the rapid definition of known and unknown cell types. Cytosplore handles millions of cells, each represented as a high-dimensional data point, facilitates hypothesis generation and confirmation, and provides a significant speed up of the current workflow. We show the effectiveness of Cytosplore in a case study evaluation."
 

@@ -4,7 +4,7 @@
 			<img alt="{{ publication.shortname }} screenshot"
 				class="paper-image-small"
 				style="width: 100%;"
-				src="{{ site.paper_content_url }}/{{ publication.key }}/{{ publication.image }}">
+				src="{% if publication.image %}{{ site.paper_content_url }}/{{ publication.key }}/{{ publication.image }}{% else %}/assets/images/placeholder.png{% endif %}">
 			</a>
 	</div>
 	<div class="paper-text-container col-md-9">
@@ -35,7 +35,18 @@
 			<a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a>
 		</div>
 		<div class="row paper-journal-container">
-			{{ publication.journal }}, {{publication.year}}
+			{% if publication.type == "article" %}
+      	{{ publication.journal }},
+      {% elsif publication.type == "inproceedings" %}
+  			In {{ publication.journal }},
+      {% elsif (publication.type == "book" or publication.type == "inbook") %}
+  			{{ publication.publisher }},
+      {% elsif (publication.type == "phdthesis" or publication.type == "mscthesis") %}
+  			{{ publication.school }},
+      {% else %}
+  			{{ publication.journal }},
+      {% endif %}
+			{{publication.year}}
 		</div>
 		{%if publication.award %}
 			<div class="row paper-title-container">

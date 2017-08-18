@@ -21,32 +21,42 @@ layout: default
 
       <h1>Faculty</h1>
 
-      {% include person.html key="reinders" %}
-      {% include person.html key="akker" %}
-      {% include person.html key="mahfouz" %}
-      {% include person.html key="hollt" %}
+      <div class="row">
+        {% include person.html key="reinders" %}
+        {% include person.html key="akker" %}
+        {% include person.html key="mahfouz" %}
+        {% include person.html key="hollt" %}
+      </div>
 
       {% if ifpostdoc == 'true' %}
         <h1 style="margin-top: 2rem;">Post-Doctoral Fellows</h1>
-        {% include person.html role="postdoc" %}
+        <div class="row">
+          {% include person.html role="postdoc" %}
+        </div>
       {% endif %}
 
       {% if ifphdstudent == 'true' %}
         <h1 style="margin-top: 2rem;">PhD Students</h1>
-        {% include person.html role="phdstudent" %}
+        <div class="row">
+          {% include person.html role="phdstudent" %}
+      </div>
       {% endif %}
 
       {% if ifmsstudent == 'true' %}
         <h1 style="margin-top: 2rem;">Master's Students</h1>
-        {% include person.html role="msstudent" %}
+        <div class="row">
+          {% include person.html role="msstudent" %}
+      </div>
       {% endif %}
 
       {% if ifadvisor == 'true' %}
         <h1 style="margin-top: 2rem;">Advisory Board</h1>
-        {% include person.html role="advisor" %}
+        <div class="row">
+          {% include person.html role="advisor" %}
+      </div>
       {% endif %}
 
-      <h1 style="margin-top: 2rem;">Alumni</h1>
+      <!--h1 style="margin-top: 2rem;">Alumni</h1>
       <p>
       {% for p in site.persons %}
         {% if p.graduated %}
@@ -55,6 +65,6 @@ layout: default
           </span>
         {% endif %}
       {% endfor %}
-      </p>
+    </p-->
 
   </article>

@@ -1,0 +1,43 @@
+{% capture input %}{{ include.input | replace:'Ä','&#123;\"A&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ë','&#123;\"E&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ï','&#123;\"I&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ö','&#123;\"O&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ü','&#123;\"U&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ä','&#123;\"a&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ë','&#123;\"e&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ï','&#123;\"i&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ö','&#123;\"o&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ü','&#123;\"u&#125;' }}{% endcapture %}
+
+{% capture input %}{{ input | replace:'Á','&#123;\'A&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'É','&#123;\'E&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Í','&#123;\'I&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ó','&#123;\'O&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ú','&#123;\'U&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'á','&#123;\'a&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'é','&#123;\'e&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'í','&#123;\'i&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ó','&#123;\'o&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ú','&#123;\'u&#125;' }}{% endcapture %}
+
+{% capture input %}{{ input | replace:'À','&#123;\`A&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'È','&#123;\`E&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ì','&#123;\`I&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ò','&#123;\`O&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ù','&#123;\`U&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'à','&#123;\`a&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'è','&#123;\`e&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ì','&#123;\`i&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ò','&#123;\`o&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ù','&#123;\`u&#125;' }}{% endcapture %}
+
+{% capture input %}{{ input | replace:'Ã','&#123;\~A&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'Ñ','&#123;\~N&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'O','&#123;\~O&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ã','&#123;\~a&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'ñ','&#123;\~n&#125;' }}{% endcapture %}
+{% capture input %}{{ input | replace:'õ','&#123;\~o&#125;' }}{% endcapture %}
+
+{% capture input %}{{ input | replace:'ß','&#123;\ss&#125;' }}{% endcapture %}
+
+{{input}}

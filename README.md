@@ -21,6 +21,8 @@ $ gem install jekyll
 
 Further details on installing Jekyll and its requirements:
 https://jekyllrb.com/docs/installation/
+and instructions for windows:
+https://jekyllrb.com/docs/windows/
 
 
 ## Adding Content
@@ -28,7 +30,7 @@ https://jekyllrb.com/docs/installation/
 You can simply add/edit team members, papers and news items by adding markdown files to the corresponding folders. For the details see
  * [Adding a team member](_persons/README.md)
  * [Adding a paper](_publications/README.md)
- * [Adding a paper](_posts/README.md)
+ * [Adding a news item](_posts/README.md)
 
 You should test your changes by running a server locally before pushing them to github:
 
