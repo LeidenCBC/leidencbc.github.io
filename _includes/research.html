@@ -1,0 +1,16 @@
+{% for researchItem in site.research %}
+{% if researchItem.key == include.key %}
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">
+      {{ researchItem.title }}
+      {% if researchItem.subtitle %}<span class="text-muted">{{ researchItem.subtitle }}</span>{% endif %}
+    </h2>
+    <p class="lead">{{ researchItem.content }}</p>
+  </div>
+  <div class="col-md-5">
+    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="{{ researchItem.title }} Illustration">
+  </div>
+</div>
+{% endif %}
+{% endfor %}
