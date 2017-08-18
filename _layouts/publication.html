@@ -178,8 +178,8 @@ layout: default
 
 
   <div class="col-md-4">
-    
-    <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{% if publication.image %}{{ site.paper_content_url }}/{{ publication.key }}/{{ publication.image }}{% else %}/assets/images/placeholder.png{% endif %}">
+
+    <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{% if page.image %}{{ site.paper_content_url }}/{{ page.key }}/{{ page.image }}{% else %}/assets/images/placeholder.png{% endif %}">
 
     {% if page.external-project %}
       <h3>Website</h3>
