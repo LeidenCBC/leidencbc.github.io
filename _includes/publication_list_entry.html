@@ -1,4 +1,4 @@
-<div class="row" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+<div class="row" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
 	<div class="paper-img-container col-md-3">
 		<a href="{{ site.baseurl }}{{ publication.url }}">
 			<img alt="{{ publication.shortname }} screenshot"
@@ -9,16 +9,26 @@
 	</div>
 	<div class="paper-text-container col-md-9">
 		<div class="row paper-authors-container">
-			{% for author in publication.authors %}
+
+			{% assign n_authors = publication.authors.size %}
+			{% assign shorten = false %}
+			{% if n_authors > 10 %}
+				{% assign shorten = true %}
+				{% assign n_authors = 5 %}
+			{% endif %}
+
+			{% for author in publication.authors limit:n_authors %}
 				{% assign known = false %}
 				{% for person in site.persons %}
 					{% if author == person.key %}
 						<span class="paper-author">
+							{% if author == publication.authors.last %}and{% endif %}
 							{% if person.website %}
 								<a href="{{ person.website }}" target="_blank">{{ person.first_name }}&nbsp;{{ person.last_name }}</a>{% if author != publication.authors.last %},&nbsp;{% endif %}
 							{% else %}
 								{{ person.first_name }}&nbsp;{{ person.last_name }}{% if author != publication.authors.last %},&nbsp;{% endif %}
 							{% endif %}
+							{% if shorten and author == publication.authors[4] %}et al.{% endif %}
 						</span>
 						{% assign known = true %}
 					{% endif %}
@@ -26,7 +36,9 @@
 
 				{% if known == false %}
 				<span class="paper-author">
+					{% if author == publication.authors.last %}and &nbsp;{% endif %}
 					{{ author }}{% if author != publication.authors.last %},&nbsp;{% endif %}
+					{% if shorten and author == publication.authors[4] %}et al.{% endif %}
 				</span>
 				{% endif %}
 			{% endfor %}

@@ -11,7 +11,7 @@ type: article
 shortname: Cytosplore
 
 # add a 2:1 aspect ratio (e.g., width: 400px, height: 200px) to the folder /assets/images/papers/
-image: 2016_eurovis_cytosplore.png
+image: 2016_eurovis_cytosplore.jpg
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
 image_large: 2016_eurovis_cytosplore_teaser.png
 
