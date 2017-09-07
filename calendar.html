@@ -1,0 +1,28 @@
+---
+permalink: /calendar.html
+---
+<head>
+  {% include head.html %}
+</head>
+
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="container hero">
+      <div class="embed-responsive embed-responsive-4by3">
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=sjvuupdoiljmn4lhitd7f0ngl0%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=Europe%2FAmsterdam" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% if site.use_analytics == true %}
+    {% include google_analytics.html %}
+    {% endif %}
+  </body>
+
+</html>
