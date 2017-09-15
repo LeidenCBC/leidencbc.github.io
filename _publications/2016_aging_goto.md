@@ -1,30 +1,30 @@
 ---
 layout: publication
-title: Metabolic effects of a 13-weeks lifestyle intervention in older adults: The Growing Old Together Study
+title: "Metabolic effects of a 13-weeks lifestyle intervention in older adults: The Growing Old Together Study"
 key: 2016_aging_goto
 permalink: /publications/2016_aging_goto/
 type: article
 shortname: goto
 image: 2016_aging_goto.png
-image_large: 2016_aging_goto_teaser.png
+image_large:
 
 authors:
-- O van den Rest
-- BA Schutte
-- J Deelen
-- SA Stassen
+- Ondine van den Rest
+- Bianca Schutte
+- Joris Deelen
+- Stephanie Stassen
 - akker
-- D van Heemst
-- P Dibbets-Schneider
-- RA van Dipten-van der Veen
-- M Kelderman
-- T Hankemeier
-- SP Mooijaart
-- J van der Grond
-- JJ Houwing-Duistermaat
-- M Beekman
-- EJ Feskens
-- PE Slagboom
+- Diana van Heemst
+- Petra Dibbets-Schneider
+- Regina van Dipten-van der Veen
+- Milou Kelderman
+- Tomas Hankemeier
+- Simon Mooijaart
+- Jeroen van der Grond
+- Jeanine Houwing-Duistermaat
+- Marian Beekman
+- Edith Feskens
+- Eline Slagboom
 
 # different entries are required here, for different classes (in parentheses; optional for bibTeX but add them if available):
 # article: journal, year (page_start, page_end, volume, issue)
