@@ -12,15 +12,13 @@
   <div class="container hero">
 
   <div class="row">
-
     <div id="home-container" class="col-md-12">
     	<h1>About Us</h1>
       <p>Progress in biology is increasingly driven by revolutions within molecular biology measuring cellular material at an unprecedented scale. Consequently, biology is changing into a computational science, analysing and interpreting gigantic volumes of complex data. The Leiden Computational Biology Center (LCBC) focusses on this new approach to biology with the aim to generate new biological insights with clinical applicabilities. It brings together computational biologists that are skilled in the newest technologies in data science and molecular technologies. As molecular technologies are pushing the field towards more precise data (across all tissues and towards single cells), more diverse data (multi-omics), at both spatial and temporal resolution, fundamentally new computational models are required that go way beyond tools that handle the data (bioinformatics), and can model all these aspects integrally. These developments define the strategic research themes on which the LCBC focusses, being models geared towards (1) single cell data, (2) integrative data, and (3) spatio-temporal data. LCBC fosters modeling approaches for promising new molecular data into approaches that push biology boundaries. To realize this aim we work on long-term research projects in close collaboration with biologist and clinicians, and capitalize by proposing medical applications based on insights generated from research done within the LCBC.</p>
       <p>LCBC is a division of the <a href="https://www.lumc.nl" target="_blank">Leiden University Medical Center</a>.</p>
     </div>
-
   </div>
-
+  <br/>
   <div class="row">
 
     <div id="post-container" class="col-md-7">
@@ -34,7 +32,7 @@
               <div class="post-list-date col-sm-3">{{ post.date | date: "%-d %b %Y" }}</div>
             </div>
             <div class="row">
-              <div class="post-list-excerpt">{{ post.content | truncatewords: 60 }}</div>
+              <div class="post-list-excerpt">{{ post.excerpt | truncatewords: 60 }}</div>
               <a class="post-list-link" href="{{ site.baseurl }}{{ post.url }}">More...</a>
             </div>
           </li>

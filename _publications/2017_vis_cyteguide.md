@@ -29,7 +29,7 @@ publisher:
 school:
 award:
 
-doi:
+doi: 10.1109/TVCG.2017.2744318
 publisher-url:
 
 project:

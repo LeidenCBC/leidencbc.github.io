@@ -10,6 +10,6 @@ image: /assets/images/team/hollt.jpg
 organization: Leiden University Medical Center / TU Delft
 position: Assistant Professor
 website: http://www.thomashollt.com
-interests: Visualization and Visual Analytics for Biological Applications
-graduated: 
+interests: Visualization and Visual Analytics
+graduated:
 ---

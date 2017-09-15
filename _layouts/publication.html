@@ -23,18 +23,29 @@ layout: default
         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
           <div class="card-block">
             <span class="paper-citation paper-authors">
-              {% for author in page.authors %}
+              {% assign n_authors = page.authors.size %}
+        			{% assign shorten = false %}
+              {% if n_authors > 10 %}
+                {% assign shorten = true %}
+                {% assign n_authors = 5 %}
+              {% endif %}
+
+              {% for author in page.authors limit:n_authors %}
 
                 {% assign known = false %}
                 {% for person in site.persons %}
                   {% if author == person.key %}
+      							{% if author == page.authors.last %}and{% endif %}
                     {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}{{ person.first_name }}&nbsp;{{ person.last_name }}{% if person.website %}</a>{% endif %}{% if author != page.authors.last%}, {% else %}. {% endif %}
+      							{% if shorten and author == page.authors[4] %}et al.{% endif %}
                     {% assign known = true %}
                   {% endif %}
                 {% endfor %}
 
                 {% if known == false %}
+                  {% if author == page.authors.last %}and{% endif %}
                   {{ author }}{% if author != page.authors.last%}, {% else %}. {% endif %}
+                  {% if shorten and author == page.authors[4] %}et al.{% endif %}
                 {% endif %}
 
               {% endfor %}
@@ -178,8 +189,8 @@ layout: default
 
 
   <div class="col-md-4">
-    
-    <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{% if publication.image %}{{ site.paper_content_url }}/{{ publication.key }}/{{ publication.image }}{% else %}/assets/images/placeholder.png{% endif %}">
+
+    <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{% if page.image %}{{ site.paper_content_url }}/{{ page.key }}/{{ page.image }}{% else %}/assets/images/placeholder.png{% endif %}">
 
     {% if page.external-project %}
       <h3>Website</h3>
