@@ -40,25 +40,25 @@ authors:
 # phdthesis: school, year
 # mscthesis: school, year
 
-journal: Computer Graphics Forum (Proceedings of EuroVis 2016)
-journal-short: CGF (EuroVis '16)
-page_start: 171
-page_end: 180
+journal: Blood
+journal-short: Blood
+page_start: 1512
+page_end: 1515
 chapter:
-volume: 35
-issue: 3
+volume: 127
+issue: 11
 year: 2016
 editor:
 publisher:
 school:
 # Add things like "Selected talk at Keystone"
-award: "Selected talk at Keystone"
+award: "Selected talk at Keystone 2016"
+award: "Early Career Investigator Travel Award Scholarship"
 
 doi: 10.1182/blood-2015-12-685925
 
-
-pdf: 2016_sr_meredith.pdf
-supplement: 2016_sr_meredith_supplement.pdf
+pdf: 2016_blood_dnmt3a.pdf
+supplement: 2016_blood_dnmt3a_supplement.pdf
 
 
 ---
