@@ -5,7 +5,7 @@ key: 2016_expger_biomarker
 permalink: /publications/2016_expger_biomarker/
 type: article
 shortname: biomarker
-image: 2016_expger_biomarker.png
+image: 2016_expger_biomarker.jpg
 image_large:
 
 authors:
