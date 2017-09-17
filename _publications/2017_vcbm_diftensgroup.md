@@ -3,7 +3,7 @@ layout: publication
 title: "Comparative Visualization for Diffusion Tensor Imaging Group Study at Multiple Levels of Detail"
 key: 2017_vcbm_diftensgroup
 permalink: /publications/2017_vcbm_diftensgroup/
-type: preprint
+type: inproceedings
 shortname: Diffusion Tensor Groups
 image: 2017_vcbm_diftensgroup.jpg
 image_large:
@@ -15,7 +15,7 @@ authors:
 - eisemann
 - vilanova
 
-journal: Visual Computing for Biology and Medicine
+journal: Proceedings of Visual Computing for Biology and Medicine (VCBM)
 journal-short: VCBM
 page_start:
 page_end:
@@ -28,7 +28,7 @@ publisher:
 school:
 award:
 
-doi:
+doi: 10.2312/vcbm.20171237
 publisher-url:
 
 project:
