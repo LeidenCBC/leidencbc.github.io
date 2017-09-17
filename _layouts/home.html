@@ -48,7 +48,7 @@
 
       <ul class="publication-short-list">
         {% assign sorted_publications = site.publications | sort: 'year' %}
-        {% for publication in sorted_publications reversed %}
+        {% for publication in sorted_publications reversed limit:15 %}
           {% if publication.year > 2015 and publication.type == "article" or publication.type == "inproceedings" %}
             <li>
               <div class="paper-list-title"><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></div>
