@@ -26,7 +26,7 @@ year: 2017
 editor:
 publisher:
 school:
-award:
+award: Best Paper Award
 
 doi: 10.2312/vcbm.20171237
 publisher-url:
