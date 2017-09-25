@@ -1,6 +1,6 @@
 # Site settings
 title: Leiden Computation Biology Center
-email: "leidencbc@gmail.com"
+email:
 description: ""
 baseurl: ""
 url: "http://www.lcbc.nl"
@@ -19,7 +19,7 @@ use_analytics: false
 
 paper_content_url: /assets/papers
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 # Build settings
