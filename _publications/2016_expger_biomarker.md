@@ -5,7 +5,7 @@ key: 2016_expger_biomarker
 permalink: /publications/2016_expger_biomarker/
 type: article
 shortname: biomarker
-image: 2016_expger_biomarker.png
+image: 2016_expger_biomarker.jpg
 image_large:
 
 authors:
@@ -33,14 +33,14 @@ page_start: 166
 page_end: 174
 chapter:
 volume: 82
-issue:
+issue: 
 year: 2016
 editor:
 publisher:
 school:
 # Add things like "Selected talk at Keystone"
 
-doi: 0.1016/j.exger.2016.06.013
+doi: https://doi.org/10.1016/j.exger.2016.06.013
 
 pdf:
 supplement:
