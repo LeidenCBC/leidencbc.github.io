@@ -5,8 +5,8 @@ key: 2017_sr_DMD
 permalink: /publications/2017_sr_DMD/
 type: article
 shortname: Duchenne muscular dystrophy
-image: 2017_sr_DMD.png
-image_large: 2017_sr_DMD_teaser.png
+image: 2017_sr_dmd.png
+image_large: 2017_sr_dmd_teaser.png
 
 authors:
 - Nathalie Doorenweerd
