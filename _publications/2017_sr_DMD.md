@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Timing and localization of human dystrophin isoform expression provide insights into the cognitive phenotype of Duchenne muscular dystrophy"
-key: 2017_sr_DMD
-permalink: /publications/2017_sr_DMD/
+key: 2017_sr_dmd
+permalink: /publications/2017_sr_dmd/
 type: article
 shortname: Duchenne muscular dystrophy
 image: 2017_sr_dmd.png
