@@ -1,9 +1,10 @@
 ---
 layout: publication
-title: "Interactive Visual Analysis of Mass Cytometry Data by Hierarchical Stochastic Neighbor Embedding Reveals Rare Cell Types"
+title: "Visual Analysis of Mass Cytometry Data by Hierarchical Stochastic Neighbor Embedding Reveals Rare Cell Types"
 key: 2017_hsne_preprint
-permalink: /publications/2017_hsne_preprint/
-type: preprint
+permalink: /publications/2017_hsne_nature_communications/
+redirect_from: /publications/2017_hsne_preprint/
+type: article
 shortname: Single Cell HSNE
 image: 2017_hsne_preprint.png
 image_large: 2017_hsne_preprint_teaser.jpg
@@ -19,20 +20,20 @@ authors:
 - koning
 - lelieveldt
 
-journal: BiorXiv Preprint
-journal-short: BiorXiv
-page_start:
-page_end:
+journal: Nature Communications
+journal-short: Nat Comm
+page_start: 1
+page_end: 10
 chapter:
-volume:
-issue:
+volume: 8
+issue: 1740
 year: 2017
 editor:
 publisher:
 school:
 award:
 
-doi: 10.1101/169888
+doi: 10.1038/s41467-017-01689-9
 publisher-url:
 
 project:
@@ -41,7 +42,7 @@ external-project:
 videos:
 - 205552113
 
-pdf: 2017_hsne_preprint.pdf
+pdf: 2017_hsne.pdf
 supplement: 2017_hsne_preprint_supplemental.pdf
 supplements:
 - name: Video
