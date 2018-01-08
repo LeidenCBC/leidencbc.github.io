@@ -9,7 +9,7 @@ email: t.gehrmann@lumc.nl
 image: /assets/images/team/tgehrmann.png 
 organization: LUMC / MolEPi
 position: postdoc
-website: https://http://thiesgehrmann.github.io/
+website: https://thiesgehrmann.github.io/
 interests: Healthy ageing
 graduated:
 ---
