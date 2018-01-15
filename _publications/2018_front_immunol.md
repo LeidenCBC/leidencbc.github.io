@@ -11,14 +11,14 @@ image_large:
 authors:
 - Anke Redeker
 - Ester Remmerswaal
-- Esmé van der Gracht
+- Esme van der Gracht
 - Suzanne Welten
 - hollt
 - koning
 - Luka Cicin-Sain
 - Janko Nikolich-Žugich
 - Ineke ten Berge
-- René van Lier
+- Rene van Lier
 - vanunen
 - Ramon Arens
 
@@ -27,24 +27,24 @@ journal-short: Front. Immunol.
 page_start:
 page_end:
 chapter:
-volume:
-issue:
+volume: 8
+issue: 1953
 year: 2018
 editor:
 publisher:
 school:
 award:
 
-doi:
-publisher-url: https://www.frontiersin.org/articles/10.3389/fimmu.2017.01953/full
+doi: 10.3389/fimmu.2017.01953
+publisher-url:
 
 project:
 external-project:
 
 videos:
 
-pdf:
-supplement:
+pdf: 2018_front_immunol_cytomegalovirus.pdf
+supplement: 2018_front_immunol_cytomegalovirus_data_sheet.pdf
 supplements:
 code:
 
