@@ -1,5 +1,186 @@
 ---
 layout: default
 ---
+<style>
+#vis {
+    margin: 0;
+}
 
-Test
+#info {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-list{
+  padding: 0;
+  font-size: 1.0em;
+}
+
+.info-project {
+  font-size: 1.0em;
+  font-weight: 400;
+}
+</style>
+
+<div id="vis">
+  <svg></svg>
+</div>
+<div id="info"></div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+    width = svg.attr("width"),
+    height = svg.attr("height");
+
+var piSize = 30;
+var otherSize = 18;
+
+var fixedInfo = false;
+
+var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody().strength(3))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(function(d){var s; (d.role == "pi") ? s = piSize : s = otherSize; return s + 3;}));
+
+d3.json("/assets/collaboration/collaborations.json", function(error, graph) {
+  if (error) throw error;
+
+  var images = svg.append("defs")
+    .selectAll("pattern")
+    .data(graph.nodes)
+    .enter()
+    .append("pattern")
+    .attr("id", function(d, i){ return "image" + i; })
+    .attr("height", 1)
+    .attr("width", 1);
+
+  images.append("image")
+    .attr("height", function(d){var s; (d.role != "pi") ? s = otherSize*2 : s = piSize*2; return s;})
+    .attr("width",function(d){var s; (d.role != "pi") ? s = otherSize*2 : s = piSize*2; return s;})
+    .attr("xlink:href", function(d){return d.image});
+
+  var node = svg.append("g")
+      .attr("class", "nodes")
+      .selectAll("circle")
+      .data(graph.nodes)
+      .enter().append("circle")
+      .attr("r", function(d){var s; (d.role != "pi") ? s = otherSize : s = piSize; return s;})
+      .attr("cx", 0)
+      .attr("cy", 0)
+      .attr("fill", function(d,i){ if(d.image != ""){ return "url(#image" + i + ")"; } else {return "rgb(230,230,230)";} })
+      .attr("stroke", function(d){var s; (d.role != "collaborator") ? s = "red" : s = "white"; return s;})
+      .attr("stroke-width", 1)
+      .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
+
+  node.on("mouseover", function(d){showInfo(d, graph.links);});
+  node.on("click", function(){toggleInfo()});
+  node.on("mouseout", function(){hideInfo()});
+
+  node.append("title")
+      .text(function(d) { return d.id; });
+
+  simulation
+      .nodes(graph.nodes)
+      .on("tick", ticked);
+
+  simulation.force("link")
+      .links(graph.links);
+
+  function ticked() {
+    node.attr("cx", function(d) { return d.x = Math.max(piSize, Math.min(width - piSize, d.x)); })
+        .attr("cy", function(d) { return d.y = Math.max(piSize, Math.min(height - piSize, d.y)); });
+  }
+});
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+function showInfo(d, links) {
+
+      if(fixedInfo) return;
+
+    var l = links.filter( function(link) {
+      return (link.project[0] != "" && (link.source.id == d.id || link.target.id == d.id));
+    });
+
+    var projects = []
+    for( var i = 0; i < l.length; i++)
+    {
+      projects = projects.concat(l[i].project);
+    }
+    projects = Array.from(new Set(projects));
+
+    var textbox = d3.select("#info")
+        .append("div")
+        .attr("class", "info-text");
+    textbox.append("h3")
+        .text(d.id);
+    textbox.append("span")
+        .attr("class", "info-inst")
+        .text(d.institution);
+    if(projects.length > 0)
+    {
+        var p = textbox.append("div");
+        p.append("span")
+          .attr("class", "info-project")
+          .text(projects.length == 1 ? "Project:" : "Projects:");
+        var pl = p.append("ul")
+          .attr("class", "project-list");
+        pl.selectAll("li")
+          .data(projects)
+          .enter()
+          .append("li")
+          .text(function(d){return d});
+    }
+}
+
+function hideInfo() {
+
+    if(fixedInfo) return;
+
+    d3.select("#info").selectAll("*").remove();
+}
+
+function toggleInfo() {
+    fixedInfo = !fixedInfo;
+}
+
+function resize() {
+
+    d3.select("#vis").attr("width", "100%");
+
+  	width = document.getElementById('vis').clientWidth;
+    height = 350;
+
+    svg.attr("width", width);
+    svg.attr("height", height);
+
+    simulation.force("center", d3.forceCenter(width / 2, height / 2));
+    simulation.restart();
+}
+
+resize();
+d3.select(window).on("resize", resize);
+
+</script>
