@@ -10,7 +10,7 @@ image_large:
 
 authors:
 - Annika Wahl
-- Erik van den Akker
+- akker
 - Lucija Klaric
 - Jerko Stambuk
 - Elisa Benedetti
