@@ -8,7 +8,6 @@ Nathalie Doorenweerd from the Radiology Department at LUMC has received the annu
 
 Nathalie won the award for her paper together with Ahmed Mahfouz on mapping the expression of dystrophin isoforms in the developing human brain. The paper was published in 2017 in Scientific Reports.  
 
-You can read more about the award here: https://www.prinsesbeatrixspierfonds.nl/nathalie-doorenweerd-wint-jaarprijs-neuromusculaire-ziekten/
-
+You can read more about the award on the [website of the Princes Beatrix Spierfonds](https://www.prinsesbeatrixspierfonds.nl/nathalie-doorenweerd-wint-jaarprijs-neuromusculaire-ziekten/)
 
 You can check the paper here: [Timing and localization of human dystrophin isoform expression provide insights into the cognitive phenotype of Duchenne muscular dystrophy](/publications/2017_sr_DMD/)
