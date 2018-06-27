@@ -31,7 +31,7 @@ year: 2017
 editor:
 publisher:
 school:
-award:
+award: Selected talk @ BioVis/ISMB 2018
 
 doi: 10.1038/s41467-017-01689-9
 publisher-url:
