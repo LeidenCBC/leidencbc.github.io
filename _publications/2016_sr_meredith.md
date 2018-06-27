@@ -2,6 +2,7 @@
 layout: publication
 title: "Pan-cancer subtyping in a 2D-map shows substructures that are driven by specific combinations of molecular characteristics"
 key: 2016_sr_meredith
+date:   2016-04-25 12:00:00
 permalink: /publications/2016_sr_meredith/
 type: article
 shortname: meredith

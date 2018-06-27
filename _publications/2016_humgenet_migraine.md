@@ -2,6 +2,7 @@
 layout: publication
 title: "Gene co-expression analysis identifies brain regions and cell types involved in migraine pathophysiology: a GWAS-based study using the Allen Human Brain Atlas"
 key: 2016_humgenet_migraine
+date:   2016-02-22 12:00:00
 permalink: /publications/2016_humgenet_migraine/
 type: article
 shortname: Migraine GWAS

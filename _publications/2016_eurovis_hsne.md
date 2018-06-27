@@ -2,6 +2,7 @@
 layout: publication
 title: "Hierarchical Stochastic Neighbor Embedding"
 key: 2016_eurovis_hsne
+date:   2016-06-01 12:00:00
 permalink: /publications/2016_eurovis_hsne/
 type: article
 shortname: HSNE

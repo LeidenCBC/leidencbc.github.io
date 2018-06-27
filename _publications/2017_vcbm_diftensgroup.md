@@ -2,8 +2,9 @@
 layout: publication
 title: "Comparative Visualization for Diffusion Tensor Imaging Group Study at Multiple Levels of Detail"
 key: 2017_vcbm_diftensgroup
+date:   2017-09-08 12:00:00
 permalink: /publications/2017_vcbm_diftensgroup/
-type: inproceedings
+type: conference
 shortname: Diffusion Tensor Groups
 image: 2017_vcbm_diftensgroup.jpg
 image_large:

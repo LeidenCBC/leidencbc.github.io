@@ -2,6 +2,7 @@
 layout: publication
 title: "CyteGuide: Visual Guidance for Hierarchical Single-Cell Analysis"
 key: 2017_vis_cyteguide
+date:   2018-01-01 12:00:00
 permalink: /publications/2017_vis_cyteguide/
 type: article
 shortname: CyteGuide

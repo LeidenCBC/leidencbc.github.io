@@ -2,6 +2,7 @@
 layout: publication
 title: "Shared Pathways Among Autism Candidate Genes Determined by Co-expression Network Analysis of the Developing Human Brain Transcriptome"
 key: 2015_jomn_asd
+date:   2015-04-01 12:00:00
 permalink: /publications/2015_jomn_asd/
 type: article
 shortname: ASD

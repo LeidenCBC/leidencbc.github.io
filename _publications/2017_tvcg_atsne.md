@@ -2,6 +2,7 @@
 layout: publication
 title: "Approximated and User Steerable tSNE for Progressive Visual Analytics"
 key: 2017_tvcg_atsne
+date:   2017-01-01 12:00:00
 permalink: /publications/2017_tvcg_atsne/
 type: article
 shortname: a-tSNE

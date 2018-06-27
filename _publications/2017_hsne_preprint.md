@@ -2,6 +2,7 @@
 layout: publication
 title: "Visual Analysis of Mass Cytometry Data by Hierarchical Stochastic Neighbor Embedding Reveals Rare Cell Types"
 key: 2017_hsne_preprint
+date:   2017-11-23 12:00:00
 permalink: /publications/2017_hsne_nature_communications/
 redirect_from: /publications/2017_hsne_preprint/
 type: article

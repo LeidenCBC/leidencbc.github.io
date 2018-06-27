@@ -2,6 +2,7 @@
 layout: publication
 title: "Linear tSNE optimization for the Web"
 key: 2018_arxiv_ttsne
+date:   2018-06-01 12:00:00
 permalink: /publications/2018_arxiv_ttsne/
 type: preprint
 shortname: GPU tSNE

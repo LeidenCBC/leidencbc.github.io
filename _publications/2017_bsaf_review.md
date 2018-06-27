@@ -2,6 +2,7 @@
 layout: publication
 title: "Brain Transcriptome Atlases: A Computational Perspective"
 key: 2017_bsaf_review
+date:   2016-12-01 12:00:00
 permalink: /publications/2017_bsaf_review/
 type: article
 shortname: Brain Transcriptome Atlases

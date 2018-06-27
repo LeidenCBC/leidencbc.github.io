@@ -2,6 +2,7 @@
 layout: publication
 title: "Cortical spreading depression causes unique dysregulation of inflammatory pathways in a transgenic mouse model of migraine"
 key: 2017_molneuro_csd
+date:   2017-01-01 12:00:00
 permalink: /publications/2017_molneuro_csd/
 type: article
 shortname: Cortical Spreading Depression

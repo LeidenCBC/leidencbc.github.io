@@ -2,6 +2,7 @@
 layout: publication
 title: "DeepEyes: Progressive Visual Analytics for Designing Deep Neural Networks"
 key: 2017_vis_deepeyes
+date:   2017-08-29 12:00:00
 permalink: /publications/2017_vis_deepeyes/
 type: article
 shortname: DeepEyes

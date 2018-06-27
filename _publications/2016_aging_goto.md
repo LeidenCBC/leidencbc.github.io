@@ -2,6 +2,7 @@
 layout: publication
 title: "Metabolic effects of a 13-weeks lifestyle intervention in older adults: The Growing Old Together Study"
 key: 2016_aging_goto
+date:   2016-01-25 12:00:00
 permalink: /publications/2016_aging_goto/
 type: article
 shortname: goto

@@ -3,6 +3,7 @@ layout: publication
 # The quotes make the : possible, otherwise you can do it without quotes
 title: "Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets"
 key: 2016_eurovis_cytosplore
+date:   2016-06-01 12:00:00
 permalink: /publications/2016_eurovis_cytosplore/
 # Options are article | inproceedings  | book | inbook | poster | preprint | phdthesis | mscthesis
 type: article

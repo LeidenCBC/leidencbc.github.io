@@ -2,6 +2,7 @@
 layout: publication
 title: "Multiscale Visualization and Exploration of Large Bipartite Graphs"
 key: 2018_eurovis_waowvis
+date:   2018-06-15 12:00:00
 permalink: /publications/2018_eurovis_waowvis/
 type: article
 shortname: WAOWVis

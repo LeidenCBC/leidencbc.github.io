@@ -2,6 +2,7 @@
 layout: publication
 title: "Co-expression Patterns between ATN1 and ATXN2 Coincide with Brain Regions Affected in Huntington’s Disease"
 key: 2017_frontmolneuro_polyq
+date:   2017-11-30 12:00:00
 permalink: /publications/2017_frontmolneuro_polyq/
 type: article
 shortname: polyq co-expression

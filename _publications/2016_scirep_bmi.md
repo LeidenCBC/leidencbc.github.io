@@ -2,6 +2,7 @@
 layout: publication
 title: "The effect of standardized food intake on the association between BMI and 1H-NMR metabolites."
 key: 2016_scirep_bmi
+date:   2016-12-14 12:00:00
 permalink: /publications/2016_scirep_bmi/
 type: article
 shortname: bmi

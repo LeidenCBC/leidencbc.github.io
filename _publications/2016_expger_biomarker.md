@@ -2,6 +2,7 @@
 layout: publication
 title: "Employing biomarkers of healthy ageing for leveraging genetic studies into human longevity"
 key: 2016_expger_biomarker
+date:   2016-06-29 12:00:00
 permalink: /publications/2016_expger_biomarker/
 type: article
 shortname: biomarker
@@ -33,14 +34,14 @@ page_start: 166
 page_end: 174
 chapter:
 volume: 82
-issue: 
+issue:
 year: 2016
 editor:
 publisher:
 school:
 # Add things like "Selected talk at Keystone"
 
-doi: https://doi.org/10.1016/j.exger.2016.06.013
+doi: 10.1016/j.exger.2016.06.013
 
 pdf:
 supplement:

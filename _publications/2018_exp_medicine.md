@@ -2,6 +2,7 @@
 layout: publication
 title: "Mass Cytometry Reveals Innate Lymphoid Cell Differentiation Pathways in the Human Fetal Intestine"
 key: 2018_exp_medicine
+date:   2018-03-06 12:00:00
 permalink: /publications/2018_exp_medicine/
 type: article
 shortname: Innate Lymphoid Differentiation

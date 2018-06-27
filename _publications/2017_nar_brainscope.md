@@ -2,6 +2,7 @@
 layout: publication
 title: "BrainScope: interactive visual exploration of the spatial and temporal human brain transcriptome"
 key: 2017_nar_brainscope
+date:   2017-01-28 12:00:00
 permalink: /publications/2017_nar_brainscope/
 type: article
 shortname: BrainScope

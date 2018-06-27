@@ -2,6 +2,7 @@
 layout: publication
 title: "Genome-wide coexpression of steroid receptors in the mouse brain: Identifying signaling pathways and functionally coordinated regions"
 key: 2016_pnas_steroids
+date:   2016-01-25 12:00:00
 permalink: /publications/2016_pnas_steroids/
 type: article
 shortname: Steroid Receptors

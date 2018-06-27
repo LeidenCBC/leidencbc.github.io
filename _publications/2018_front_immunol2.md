@@ -2,6 +2,7 @@
 layout: publication
 title: "Genome-Wide Association Study on Immunoglobulin G Glycosylation Patterns"
 key: 2018_front_immunol_igggwas
+date:   2018-02-26 12:00:00
 permalink: /publications/2018_front_immunol_igggwas/
 type: article
 shortname: IgG_GWAS
@@ -30,7 +31,7 @@ authors:
 - Manfred Wuhrer
 - Marian Beekman
 - Gordan Lauc
-- Christian Gieger 
+- Christian Gieger
 
 journal: Frontiers in Immunology
 journal-short: Front. Immunol.

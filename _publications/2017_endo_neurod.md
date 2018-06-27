@@ -2,6 +2,7 @@
 layout: publication
 title: "NeuroD factors discriminate mineralocorticoid from glucocorticoid receptor DNA binding in the male rat brain"
 key: 2017_endo_neurod
+date:   2017-01-24 12:00:00
 permalink: /publications/2017_endo_neurod/
 type: article
 shortname: NeuroD factors
