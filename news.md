@@ -5,7 +5,8 @@ tag: news
 permalink: /news/
 ---
 <article class="post-content-main">
-  <h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
+  <!--h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1-->
+  <h1>News <span class="left-icon"><i class="fa fa-rss"></i></span></h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="post-list-item">

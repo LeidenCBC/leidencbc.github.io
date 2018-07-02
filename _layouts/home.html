@@ -22,7 +22,8 @@
   <div class="row">
 
     <div id="post-container" class="col-md-7">
-      <h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
+      <a href="{{ site.baseurl }}/news/" style="text-decoration: none;"><h1>News <span class="left-icon"><i class="fa fa-rss"></i></a></span></h1>
+      <!--h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1-->
 
       <ul class="post-list">
         {% for post in site.posts limit:3 %}
