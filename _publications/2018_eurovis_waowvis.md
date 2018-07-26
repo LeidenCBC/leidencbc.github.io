@@ -19,10 +19,10 @@ authors:
 
 journal: Computer Graphics Forum (Proceedings of EuroVis 2018)
 journal-short: CGF (EuroVis 2018)
-page_start:
-page_end:
+page_start: 549
+page_end: 560
 chapter:
-volume: 17
+volume: 37
 issue: 3
 year: 2018
 editor:

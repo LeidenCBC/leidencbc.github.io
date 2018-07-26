@@ -19,8 +19,8 @@ authors:
 
 journal: IEEE Transactions on Visualization and Computer Graphics (Proceedings of IEEE VAST 2017)
 journal-short: TVCG (VAST '17)
-page_start:
-page_end:
+page_start: 98
+page_end: 108
 chapter:
 volume: 24
 issue: 1

@@ -19,8 +19,8 @@ authors:
 
 journal: IEEE Transactions on Visualization and Computer Graphics (Proceedings of IEEE InfoVis 2017)
 journal-short: TVCG (InfoVis '17)
-page_start:
-page_end:
+page_start: 739
+page_end: 748
 chapter:
 volume: 24
 issue: 1
