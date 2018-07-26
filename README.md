@@ -12,6 +12,8 @@ If you do not have a github account yet, create one.
 ### Get the code
 Clone the repository (https://github.com/LeidenCBC/leidencbc.github.io.git) to your local drive. In case you are not familiar with git an easy way is using the [Github Desktop](https://desktop.github.com/).
 
+Once you have cloned the repository, check out the *develop* branch or create your own temporary feature branch. This is where you make your edits. Once you have made your edits you can push them to that branch and create a pull request to the master branch for publishing the changes to the website (see below).
+
 ### Install Jekyll
 If you have Ruby on your machine, just install Jekyll:
 
@@ -52,8 +54,10 @@ Refresh the page after you made any changes to any of the files
 
 ### Commit and push
 
-If you are happy with the changes commit them to your git repository.
+If you are happy with the changes commit them to the develop or feature branch of your git repository.
 
 * First fetch any changes from the repository (Github Desktop: Fetch origin).
 * Then Add a description of your changes and commit (Github Desktop: press commit to master).
-* Finally push your changes to the github server (Github Desktop: push origin).
+* Push your changes to the github server (Github Desktop: push origin).
+* Create a pull request on the github repository website (Tab *Pull request* -> *New pull request*.
+* Ask another team member to review the code and merge the pull request.
