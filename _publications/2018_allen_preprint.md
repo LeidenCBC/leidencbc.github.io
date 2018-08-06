@@ -47,7 +47,7 @@ authors:
 - Mohamed Keshk
 - Andrew L Ko
 - Kanan Lathia
-- mMahfouz
+- mahfouz
 - Zoe Maltzer
 - Medea McGraw
 - Thuc Nghi Nguyen
