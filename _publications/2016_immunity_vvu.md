@@ -39,7 +39,7 @@ award: LUMC Best Article Prize 2016 (non clinical)
 doi: 10.1016/j.immuni.2016.04.014
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

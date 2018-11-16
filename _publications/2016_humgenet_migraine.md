@@ -57,7 +57,7 @@ award: ASHG 2015 Annual Meeting Reviewer’s Choice
 doi: 10.1007/s00439-016-1638-x
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

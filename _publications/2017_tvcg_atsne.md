@@ -33,7 +33,7 @@ award:
 doi: 10.1109/TVCG.2016.2570755
 publisher-url:
 
-project:
+projects:
 external-project:
 
 videos:

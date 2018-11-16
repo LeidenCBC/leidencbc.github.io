@@ -36,7 +36,7 @@ award:
 doi: 10.3389/fnmol.2017.00399
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

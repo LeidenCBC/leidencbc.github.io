@@ -1,11 +1,11 @@
 <meta charset="utf-8">
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }} &#8226; {% endif %}{{ site.title }}</title>
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="{{ site.description }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
 <!-- Custom CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tether.min.css" media="all">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css" media="all">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css" media="all">

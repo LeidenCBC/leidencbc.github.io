@@ -7,7 +7,7 @@
 
     <div class="collapse navbar-collapse" id="containerNavbar">
       <ul class="navbar-nav mr-auto">
-        {% assign navButtons = "home|team|publications|research|projects" | split: "|" %}
+        {% assign navButtons = "home|team|publications|projects|research" | split: "|" %}
         {% for nav in navButtons %}
           {% assign navURL = "/" | append: nav | append: "/" %}
           {% assign pageURL = page.url %}

@@ -36,7 +36,7 @@ award: Selected for a highlight talk @ BioVis 2017
 doi: 10.1093/nar/gkx046
 publisher-url:
 
-project:
+projects:
 external-project: http://www.brainscope.nl
 videos:
 

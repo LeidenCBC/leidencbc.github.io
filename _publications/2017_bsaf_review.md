@@ -31,7 +31,7 @@ award:
 doi: 10.1007/s00429-016-1338-2
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

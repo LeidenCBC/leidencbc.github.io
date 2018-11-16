@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Projects | Leiden CBC
+title: Projects
 tag: projects
 permalink: /projects/
 ---

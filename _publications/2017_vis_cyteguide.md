@@ -33,12 +33,14 @@ award:
 doi: 10.1109/TVCG.2017.2744318
 publisher-url:
 
-project:
+projects:
+- cytosplore
+
 external-project: https://cyteguide.cytosplore.org/
 
 videos:
-- 227802819
 - 223373844
+- 227802819
 
 pdf: 2017_vis_cyteguide.pdf
 supplement:

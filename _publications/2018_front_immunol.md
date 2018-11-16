@@ -39,7 +39,7 @@ award:
 doi: 10.3389/fimmu.2017.01953
 publisher-url:
 
-project:
+projects:
 external-project:
 
 videos:

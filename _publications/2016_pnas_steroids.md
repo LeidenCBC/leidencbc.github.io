@@ -39,7 +39,7 @@ award: Cover mention and Commentary
 doi: 10.1073/pnas.1520376113
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

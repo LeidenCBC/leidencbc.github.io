@@ -37,7 +37,9 @@ award: Selected talk @ BioVis/ISMB 2018
 doi: 10.1038/s41467-017-01689-9
 publisher-url:
 
-project:
+projects:
+- cytosplore
+
 external-project:
 
 videos:

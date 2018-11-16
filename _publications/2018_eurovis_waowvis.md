@@ -33,7 +33,7 @@ award:
 doi: 10.1111/cgf.13441
 publisher-url:
 
-project:
+projects:
 external-project:
 
 videos:

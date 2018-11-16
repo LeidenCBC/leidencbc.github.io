@@ -32,7 +32,7 @@ award: Best Paper Award
 doi: 10.2312/vcbm.20171237
 publisher-url:
 
-project:
+projects:
 external-project:
 
 videos:

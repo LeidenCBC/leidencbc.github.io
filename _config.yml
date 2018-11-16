@@ -41,9 +41,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
-  research:
-    output: true
-    permalink: /research/:path/
   projects:
     output: true
     permalink: /projects/:path/
+  research:
+    output: true
+    permalink: /research/:path/

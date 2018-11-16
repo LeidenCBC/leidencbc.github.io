@@ -41,7 +41,7 @@ award:
 doi: 10.1158/1078-0432.CCR-18-1749
 publisher-url:
 
-project:
+projects:
 external-project:
 
 videos:

@@ -36,7 +36,7 @@ award:
 
 doi: 10.1038/srep24949
 publisher:
-project:
+projects:
 external-project: http://pancancer-map.ewi.tudelft.nl/
 videos:
 
