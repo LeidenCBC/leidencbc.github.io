@@ -10,7 +10,7 @@ image: 2018_frontneuro_metabolic.png
 image_large: 2018_frontneuro_metabolic_teaser.png
 
 authors:
-- Lisa koorneef
+- Lisa Koorneef
 - Marit Bogaards
 - reinders
 - meijer
