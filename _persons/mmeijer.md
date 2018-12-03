@@ -11,5 +11,5 @@ organization: Leiden University Medical Center
 position: student
 website:
 interests:
-graduated:
+graduated: MSc, 2018
 ---
