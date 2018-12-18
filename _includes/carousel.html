@@ -53,10 +53,11 @@
 {% endcapture %}
 
 <script>
-    var publications = {{ publications | strip_newlines }}
-    publications.sort(function () {
-        return .5 - Math.random();
+    var publications = {{ publications | strip_newlines }}.filter(function (el) {
+        return ( el != null && el != undefined );
     });
+
+    publications = shuffle(publications);
 
     var i = 0;
     ["#first-slide", "#second-slide", "#third-slide"].forEach(function (id) {
@@ -73,4 +74,22 @@
         bannerLink.attr("href", pub.url);
         bannerLink.text(pub.title);
     });
+
+    function shuffle(array) {
+        var m = array.length, t, i;
+
+        // While there remain elements to shuffle…
+        while (m) {
+
+            // Pick a remaining element…
+            i = Math.floor(Math.random() * m--);
+
+            // And swap it with the current element.
+            t = array[m];
+            array[m] = array[i];
+            array[i] = t;
+        }
+
+        return array;
+    }
 </script>
