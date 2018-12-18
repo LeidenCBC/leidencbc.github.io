@@ -4,8 +4,6 @@
 <div class="row person-container col-lg-6">
   {% capture name %}{{ person.first_name }} {{ person.last_name }}{% endcapture %}
 
-  {% if person.role != "alumnus" %}
-
     <div class="col-md-3">
       {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
       <div class="person-pic" style="background: url({{ person.image }});"></div>
@@ -40,10 +38,10 @@
       {% endif %}
     </div>
 
-  {% endif %}
 </div>
 {% endif %}
 {% endif %}
+
 {% if include.role == "advisor" and person.role == include.role %}
   {% capture name %}{{ person.first_name }} {{ person.last_name }}{% endcapture %}
   <div class="col-md-3 mobile-center">
@@ -51,6 +49,18 @@
       {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
         {{ name }}
       {% if person.website %}</a>{% endif %}
+    </h3>
+  </div>
+{% endif %}
+
+{% if person.graduated != null and include.role == "alumnus" %}
+  {% capture name %}{{ person.first_name }} {{ person.last_name }}{% endcapture %}
+  <div class="col-md-3 mobile-center">
+    <h3>
+      {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
+        {{ name }}
+      {% if person.website %}</a>{% endif %}</br>
+      {{ person.graduated }}
     </h3>
   </div>
 {% endif %}

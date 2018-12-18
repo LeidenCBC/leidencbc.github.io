@@ -7,7 +7,7 @@ permalink: /publications/2018_eurovis_waowvis/
 type: article
 shortname: WAOWVis
 image: 2018_eurovis_waowvis.png
-image_large: 2018_eurovis_waowvis_teaser.png
+image_large:
 
 authors:
 - pezzotti

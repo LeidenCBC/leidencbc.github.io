@@ -11,5 +11,5 @@ organization: TU Delft / Leiden University Medical Center
 position: PhD Student
 website:
 interests:
-graduated:
+graduated: PhD, 2019
 ---

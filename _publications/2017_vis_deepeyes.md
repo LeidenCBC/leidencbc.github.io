@@ -7,7 +7,7 @@ permalink: /publications/2017_vis_deepeyes/
 type: article
 shortname: DeepEyes
 image: 2017_vis_deepeyes.png
-image_large: 2017_vis_deepeyes_teaser.png
+image_large:
 
 authors:
 - pezzotti

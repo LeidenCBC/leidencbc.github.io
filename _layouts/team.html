@@ -14,6 +14,8 @@ layout: default
         {% elsif person.role == 'undergrad' %}
             {% assign ifundergrad = 'true' %}
         {% endif %}
+      {% else %}
+          {% assign ifalumni = 'true' %}
       {% endif %}
     {% endfor %}
 
@@ -53,18 +55,14 @@ layout: default
         <h1 style="margin-top: 2rem;">Advisory Board</h1>
         <div class="row">
           {% include person.html role="advisor" %}
-      </div>
+        </div>
       {% endif %}
 
-      <!--h1 style="margin-top: 2rem;">Alumni</h1>
-      <p>
-      {% for p in site.persons %}
-        {% if p.graduated %}
-          <span class="alumni">
-              {% if p.website %}<a href="{{ p.website }}" target="_blank">{% endif %}{{ p.first_name }}&nbsp;{{ p.last_name }}{% if p.website %}</a>{% endif %}
-          </span>
-        {% endif %}
-      {% endfor %}
-    </p-->
+      {% if ifalumni == 'true' %}
+        <h1 style="margin-top: 4rem;">Alumni</h1>
+        <div class="row">
+          {% include person.html role="alumnus" %}
+        </div>
+      {% endif %}
 
   </article>
