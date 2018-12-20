@@ -12,11 +12,49 @@ layout: default
   {% endif %}
 {% endfor %}
 
+{% assign numInvolved = page.team.size %}
+
 <h1>{{ page.title }}</h1>
 <div class="row paper-row">
   <div class="col-md-8 paper-main">
-    <p><span class="h2">Description:</span> {{ page.long-text }}</p>
-    {{ content }}
+    <div class="row">
+      <p><span class="h2">Description:</span> {{ page.long-text }}</p>
+    </div>
+    <div class="row">
+      {{ content }}
+    </div>
+    {% if numInvolved > 0 %}
+      <h2 style="margin-top: 2.5rem;">LCBC Team Members</h2>
+      <hr/>
+      <div class="row">
+        {% for member in page.team %}
+          {% for person in site.persons %}
+            {% if person.key == member%}
+              <div>
+                {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
+                  <div class="person-pic" style="margin-top: 1em; margin-right: 1em; background: url({{ person.image }});"></div>
+                {% if person.website %}</a>{% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if numPapers > 0 %}
+      <h2 style="margin-top: 2.5rem;">Related Publications</h2>
+      <hr/>
+      <div class="row">
+        {% for publication in site.publications reversed %}
+          {% if publication.projects%}
+            {% for p in publication.projects %}
+              {% if p == page.key%}
+                {% include publication_list_entry.html %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 
   <div class="col-md-4">
@@ -62,26 +100,6 @@ layout: default
             {% if studentproject.icon %}<i class="{{ studentproject.icon }}"></i>{% else %}<i class="far fa-file"></i>{% endif %}
             &nbsp;<a href="{% if studentproject.abslink %}{{ studentproject.abslink }}{% else %}{{site.project_content_url}}/{{ page.key }}/{{ studentproject.link }}{% endif %}" target="_blank">{{studentproject.name}}</a>
           </li>
-        {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
-    {% if numPapers > 0 %}
-      {% if numPapers > 1 %}<h3>Related Publications</h3>{% else %}<h3>Related Publication</h3>{% endif %}
-      <div class="row paper-side-row">
-        <ul class="publication-short-list">
-        {% for publication in site.publications %}
-          {% if publication.projects%}
-            {% for p in publication.projects %}
-              {% if p == page.key%}
-                <li>
-                  <i class="far fa-file"></i>
-                  &nbsp;<a href="{{site.url}}{{ publication.permalink }}">{{publication.shortname}}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
         {% endfor %}
         </ul>
       </div>
