@@ -72,7 +72,7 @@ d3.json("/assets/collaboration/collaborations.json", function(error, graph) {
       .attr("cx", 0)
       .attr("cy", 0)
       .attr("fill", function(d,i){ if(d.image != ""){ return "url(#image" + i + ")"; } else {return "rgb(230,230,230)";} })
-      .attr("stroke", function(d){var s; (d.role != "collaborator") ? s = "red" : s = "white"; return s;})
+      .attr("stroke", function(d){var s; (d.role != "collaborator") ? s = "#E11932" : s = "white"; return s;})
       .attr("stroke-width", 1)
       .call(d3.drag()
           .on("start", dragstarted)

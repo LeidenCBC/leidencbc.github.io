@@ -1,3 +1,7 @@
+:root {
+  --lcbc-red: #E11932;
+}
+
 body {
   font-size: 1.1em;
   line-height: 1.9em;
@@ -7,8 +11,8 @@ body {
 
 a {
   text-decoration: underline;
-  -webkit-text-decoration-color: red;
-  text-decoration-color: red;
+  -webkit-text-decoration-color: var(--lcbc-red);
+  text-decoration-color: var(--lcbc-red);
 
   color: #333;
 }
@@ -19,8 +23,8 @@ a:hover, a:focus {
 }
 
 hr {
-  color: red;
-  background-color: red;
+  color: var(--lcbc-red);
+  background-color: var(--lcbc-red);
   margin: 0;
 }
 
@@ -69,7 +73,7 @@ nav {
 }
 
 #nav-current {
-  color: red;
+  color: var(--lcbc-red);
 }
 
 .nav-link {
@@ -129,7 +133,7 @@ nav {
 }
 
 .carousel-indicators .active{
-  background-color: red;
+  background-color: var(--lcbc-red);
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -137,11 +141,11 @@ nav {
 }
 
 .carousel-control-prev-icon {
-  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#E11932' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
 }
 
 .carousel-control-next-icon {
-  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#E11932' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
 }
 
 .carousel-caption {
@@ -154,7 +158,7 @@ nav {
 }
 
 .carousel-caption-inner a {
-  color: red;
+  color: var(--lcbc-red);;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 300;
@@ -276,7 +280,7 @@ footer {
 
 .paper-title-container a {
   text-decoration: none;
-  color: red;
+  color: var(--lcbc-red);;
   font-weight: 400;
   font-size: 1em;
 }
@@ -288,7 +292,7 @@ footer {
 .person-pic {
   width: 90px;
   height: 90px;
-  background-color: red;
+  background-color: var(--lcbc-red);;
   border: 1.5px solid #BBB;
   -moz-border-radius: 45px;
   -webkit-border-radius: 45px;
@@ -327,7 +331,7 @@ footer {
   border-radius: 1px;
   height: 3px;
   width: 35px;
-	background: red;
+	background: var(--lcbc-red);;
   position: absolute;
   display: block;
   content: '';
@@ -386,14 +390,14 @@ footer {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 380px) {
 
     #logo-header-wide {
       display:none;
     }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 380px) {
 
     #logo-header-narrow {
       display:none;

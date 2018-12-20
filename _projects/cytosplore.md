@@ -9,7 +9,7 @@ image: cytosplore.jpg
 # add core team members here with key or full name
 team:
 - hollt
-- Nicola Pezzotti
+- pezzotti
 - vilanova
 - lelieveldt
 
@@ -37,20 +37,20 @@ videos:
 
 # If you have documents for open student projects add them here
 student-projects:
-- name: Visualizing Cell Differentiation
-  link: 2019_visualizing_cell_differentiation.pdf
+#- name: Visualizing Cell Differentiation
+#  link: 2019_visualizing_cell_differentiation.pdf
 # you can use the *free* font awesome (v.5.5) icons from https://fontawesome.com/icons?d=gallery&m=free
 # use the css class in the format "fas/r fa-name" here, see for example https://fontawesome.com/icons/file?style=regular to get the code used here
+#  icon: far fa-file-pdf
+- name: UMAP for Single-Cell Analysis
+  link: 2019_UMAP.pdf
   icon: far fa-file-pdf
-- name: Comparing Dimensionality Reduction
-  link: 2019_comparing_dimensionality_reduction.pdf
-  icon: far fa-file-pdf
-- name: Visualizing Clustering Hierarchies
-  link: 2019_visualizing_cluster_hierarchies.pdf
-  icon: far fa-file-pdf
-- name: Imaging Flow Cytometry
-  link: 2019_imaging_flow_cytometry.pdf
-  icon: far fa-file-pdf
+#- name: Visualizing Clustering Hierarchies
+#  link: 2019_visualizing_cluster_hierarchies.pdf
+#  icon: far fa-file-pdf
+#- name: Imaging Flow Cytometry
+#  link: 2019_imaging_flow_cytometry.pdf
+#  icon: far fa-file-pdf
 
 # Add a short description for the listing page here. keep it short to dont break the layout onm /projects
 short-text: "Cytosplore is an interactive visual analysis system for understanding how the immune system works. The goal of the analysis framework is to provide a clear picture of the immune systems cellular composition and the cells’ corresponding properties and functionality. Cytosplore incorporates state-of-the art clustering and dimensionality reduction techniques such as HSNE, allowing the exploration of millions of cells without the need for downsampling."

@@ -46,7 +46,7 @@ layout: default
         {% for document in page.documents %}
           <li>
             {% if document.icon %}<i class="{{ document.icon }}"></i>{% else %}<i class="far fa-file"></i>{% endif %}
-            &nbsp;<a href="{% if document.abslink %}{{ document.abslink }}{% else %}{{site.asset_url}}/projects/{{ page.key }}/{{ document.link }}{% endif %}" target="_blank">{{document.name}}</a>
+            &nbsp;<a href="{% if document.abslink %}{{ document.abslink }}{% else %}{{site.project_content_url}}/{{ page.key }}/{{ document.link }}{% endif %}" target="_blank">{{document.name}}</a>
           </li>
         {% endfor %}
         </ul>
@@ -60,7 +60,7 @@ layout: default
         {% for studentproject in page.student-projects %}
           <li>
             {% if studentproject.icon %}<i class="{{ studentproject.icon }}"></i>{% else %}<i class="far fa-file"></i>{% endif %}
-            &nbsp;<a href="{% if studentproject.abslink %}{{ studentproject.abslink }}{% else %}{{site.asset_url}}/projects/{{ page.key }}/{{ studentproject.link }}{% endif %}" target="_blank">{{studentproject.name}}</a>
+            &nbsp;<a href="{% if studentproject.abslink %}{{ studentproject.abslink }}{% else %}{{site.project_content_url}}/{{ page.key }}/{{ studentproject.link }}{% endif %}" target="_blank">{{studentproject.name}}</a>
           </li>
         {% endfor %}
         </ul>
