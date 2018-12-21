@@ -33,7 +33,7 @@ award:
 doi: 10.1007/s12031-015-0641-3
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

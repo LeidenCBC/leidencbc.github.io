@@ -54,8 +54,9 @@ doi: 10.1111/cgf.12893
 # The publisher URL - use only if no doi is available
 publisher-url:
 
-# Use if this paper is linked to an internal project. This will link to the project site (not used right now)
-project:
+# Use if this paper is linked to internal projects. This will link to and list it on the project site
+projects:
+- cytosplore
 
 # Use this if you have an external project website
 external-project: https://www.cytosplore.org/

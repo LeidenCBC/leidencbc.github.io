@@ -1,6 +1,6 @@
 ---
 layout: research
-title: Research | Leiden CBC
+title: Research
 tag: research
 permalink: /research/
 ---

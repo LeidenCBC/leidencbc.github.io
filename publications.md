@@ -1,6 +1,6 @@
 ---
 layout: publications
-title: Publications | Leiden CBC
+title: Publications
 tag: publications
 permalink: /publications/
 ---

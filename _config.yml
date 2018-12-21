@@ -16,8 +16,8 @@ safe: false
 lsi: false
 google_analytics: ""
 use_analytics: false
-
 paper_content_url: /assets/papers
+project_content_url: /assets/projects
 
 plugins:
   - jekyll-redirect-from
@@ -41,9 +41,9 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
-  research:
-    output: true
-    permalink: /research/:path/
   projects:
     output: true
     permalink: /projects/:path/
+  research:
+    output: true
+    permalink: /research/:path/

@@ -40,7 +40,7 @@ award:
 doi: 10.1007/s12035-015-9681-5
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

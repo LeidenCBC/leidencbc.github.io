@@ -33,7 +33,7 @@ award:
 doi:
 publisher-url: https://arxiv.org/abs/1805.10817
 
-project:
+projects:
 external-project: https://nicola17.github.io/tfjs-tsne-demo/
 
 videos:

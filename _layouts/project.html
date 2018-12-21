@@ -1,0 +1,154 @@
+---
+layout: default
+---
+{% assign numPapers = 0 %}
+{% for publication in site.publications %}
+  {% if publication.projects%}
+    {% for p in publication.projects %}
+      {% if p == page.key%}
+        {% assign numPapers = numPapers | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign numInvolved = 0 %}
+{% for person in site.persons %}
+  {% if person.role != "collaborator" %}
+    {% if person.projects %}
+      {% for p in person.projects %}
+        {% if p == page.key%}
+          {% assign numInvolved = numInvolved | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<h1>{{ page.title }}</h1>
+<div class="row paper-row">
+  <div class="col-md-8 paper-main">
+    <div class="row">
+      <p><span class="h2">Description:</span> {{ page.long-text }}</p>
+    </div>
+    <div class="row">
+      {{ content }}
+    </div>
+    {% if numInvolved > 0 %}
+      <h2 style="margin-top: 2.5rem;">LCBC Team Members</h2>
+      <hr/>
+      <div class="row">
+        {% for person in site.persons %}
+          {% if person.role != "collaborator" %}
+            {% if person.projects %}
+              {% for p in person.projects %}
+                {% if p == page.key%}
+                <div style="align: center; margin-top: 1em; margin-right: 1em;">
+                  {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
+                    <div class="person-pic" style="background: url({{ person.image }});"></div>
+                  {% if person.website %}</a>{% endif %}
+                  <span style="margin-top: 1em;">{{ person.first_name }} {{ person.last_name }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% endif %}
+      {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.funding.size > 0 %}
+      <h2 style="margin-top: 2.5rem;">Funding</h2>
+      <hr/>
+      <div class="row">
+        {% for funds in page.funding %}
+          {% if page.funding.size > 1 %}<div style="max-width: 45%; margin-right: 5%;">
+          {% else %}<div style="max-width: 100%;">{% endif %}
+            {% if funds.link %}<a href="{{ funds.link }}" target="_blank">{% endif %}
+              <img src="{{ funds.image }}" class="funding-img">
+            {% if funds.link %}</a>{% endif %}
+            <br/>
+            <span>{{ funds.description }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if numPapers > 0 %}
+      <h2 style="margin-top: 2.5rem;">Related Publications</h2>
+      <hr/>
+      <div class="row">
+        {% for publication in site.publications reversed %}
+          {% if publication.projects%}
+            {% for p in publication.projects %}
+              {% if p == page.key%}
+                {% include publication_list_entry.html %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="col-md-4">
+    {% if page.videos %}
+      <div class="row paper-side-row">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/{{page.videos[0]}}?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    {% else %}
+      <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{% if page.image %}{{ site.project_content_url }}/{{ page.key }}/{{ page.image }}{% else %}/assets/images/placeholder.png{% endif %}">
+    {% endif %}
+
+    {% if page.external %}
+      <h3>Website</h3>
+      <div class="row paper-side-row">
+        <ul class="publication-short-list">
+    		  <li><i class="fas fa-globe"></i> &nbsp;<a class="project-website" href="{{page.external}}" target="_blank">{{ page.shortname }} Website</a></li>
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.documents %}
+      <h3>Resources</h3>
+      <div class="row paper-side-row">
+        <ul class="publication-short-list">
+        {% for document in page.documents %}
+          <li>
+            {% if document.icon %}<i class="{{ document.icon }}"></i>{% else %}<i class="far fa-file"></i>{% endif %}
+            &nbsp;<a href="{% if document.abslink %}{{ document.abslink }}{% else %}{{site.project_content_url}}/{{ page.key }}/{{ document.link }}{% endif %}" target="_blank">{{document.name}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.student-projects %}
+      <h3>Open Student Projects</h3>
+      <div class="row paper-side-row">
+        <ul class="publication-short-list">
+        {% for studentproject in page.student-projects %}
+          <li>
+            {% if studentproject.icon %}<i class="{{ studentproject.icon }}"></i>{% else %}<i class="far fa-file"></i>{% endif %}
+            &nbsp;<a href="{% if studentproject.abslink %}{{ studentproject.abslink }}{% else %}{{site.project_content_url}}/{{ page.key }}/{{ studentproject.link }}{% endif %}" target="_blank">{{studentproject.name}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.videos %}
+      {% if  page.videos.size > 1 %}<h3>Videos</h3>{% else %}<h3>Video</h3>{% endif %}
+      {% for video in page.videos %}
+        {% if video != page.videos[0] %}
+          <div class="row paper-side-row">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/{{video}}?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+  </div>
+</div>

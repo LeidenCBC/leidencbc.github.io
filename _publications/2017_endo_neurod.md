@@ -38,7 +38,7 @@ award:
 
 doi: 10.1210/en.2016-1422
 publisher:
-project:
+projects:
 external-project:
 videos:
 

@@ -1,7 +1,6 @@
 ---
 layout: team
-title: Team | Leiden CBC
+title: Team
 tag: team
 permalink: /team/
 ---
-

@@ -1,4 +1,4 @@
-<div class="row" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
+<div class="row" style="margin-top: 2.5rem;">
 	<div class="paper-img-container col-md-3">
 		<a href="{{ site.baseurl }}{{ publication.url }}">
 			<img alt="{{ publication.shortname }} screenshot"
@@ -36,9 +36,8 @@
 
 				{% if known == false %}
 				<span class="paper-author">
-					{% if author == publication.authors.last %}and &nbsp;{% endif %}
-					{{ author }}{% if author != publication.authors.last %},&nbsp;{% endif %}
-					{% if shorten and author == publication.authors[4] %}et al.{% endif %}
+					{% if author == publication.authors.last %}and{% endif %}
+					{{ author }}{% if author != publication.authors.last %},&nbsp;{% if shorten and author == publication.authors[4] %}et al.{% endif %}{% endif %}
 				</span>
 				{% endif %}
 			{% endfor %}
@@ -62,7 +61,7 @@
 		</div>
 		{%if publication.award %}
 			<div class="row paper-title-container">
-				<span class="award"><i class="fa fa-diamond"></i>&nbsp;{{publication.award}}</span>
+				<span class="award"><i class="far fa-gem"></i>&nbsp;{{publication.award}}</span>
 			</div>
 		{% endif %}
 	</div>

@@ -38,7 +38,9 @@ award: Cover Image
 doi: 10.1084/jem.20171934
 publisher-url:
 
-project:
+projects:
+- cytosplore
+
 external-project:
 
 videos:

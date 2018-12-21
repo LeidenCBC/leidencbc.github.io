@@ -17,7 +17,7 @@ layout: default
   {% endfor %}
 
   {% if ifpreprint %}
-    <h1>Preprints</h1>
+    <h1">Preprints</h1>
 
     {% for publication in site.publications reversed %}
       {% if publication.type == "preprint" %}
@@ -27,7 +27,7 @@ layout: default
   {% endif %}
 
   {% if ifpaper %}
-    <h1>Peer-Reviewed Journal and Conference Papers</h1>
+    <h1 style="margin-top: 2.5rem;">Peer-Reviewed Journal and Conference Papers</h1>
 
     {% for publication in site.publications reversed %}
       {% if publication.type == "inproceedings" or publication.type == "article" %}
@@ -37,7 +37,7 @@ layout: default
   {% endif %}
 
   {% if ifbook %}
-    <h1>Books & Book Chapters</h1>
+    <h1 style="margin-top: 2.5rem;">Books & Book Chapters</h1>
 
     {% for publication in site.publications reversed %}
       {% if publication.type == "book" or publication.type == "inbook" %}
@@ -47,7 +47,7 @@ layout: default
   {% endif %}
 
   {% if ifposter %}
-    <h1>Posters</h1>
+    <h1 style="margin-top: 2.5rem;">Posters</h1>
 
     {% for publication in site.publications reversed %}
       {% if publication.type == "poster" %}
@@ -57,7 +57,7 @@ layout: default
   {% endif %}
 
   {% if ifthesis %}
-    <h1>Theses</h1>
+    <h1 style="margin-top: 2.5rem;">Theses</h1>
 
     {% for publication in site.publications reversed %}
       {% if publication.type == "mscthesis" or publication.type == "phdthesis" %}

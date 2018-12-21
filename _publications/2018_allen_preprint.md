@@ -92,7 +92,7 @@ award:
 
 doi: 10.1101/384826
 
-project: Cytosplore
+projects:
 external-project: https://viewer.cytosplore.org/
 
 videos:
@@ -109,7 +109,7 @@ supplements:
     abslink: https://vimeo.com/273183030
     icon: video
   - name: Data
-    abslink:
+    abslink: http://celltypes.brainmap.org/rnaseq/human
     icon: code
 
 abstract: "Elucidating the cellular architecture of the human neocortex is central to understanding our cognitive abilities and susceptibility to disease. Here we applied single nucleus RNA-sequencing to perform a comprehensive analysis of cell types in the middle temporal gyrus of human cerebral cortex. We identify a highly diverse set of excitatory and inhibitory neuronal types that are mostly sparse, with excitatory types being less layer-restricted than expected. Comparison to a similar mouse cortex single cell RNA-sequencing dataset revealed a surprisingly well-conserved cellular architecture that enables matching of homologous types and predictions of human cell type properties. Despite this general conservation, we also find extensive differences between homologous human and mouse cell types, including dramatic alterations in proportions, laminar distributions, gene expression, and morphology. These species-specific features emphasize the importance of directly studying human brain."

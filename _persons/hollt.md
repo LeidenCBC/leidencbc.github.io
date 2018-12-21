@@ -12,4 +12,6 @@ position: Assistant Professor
 website: http://www.thomashollt.com
 interests: Visualization and Visual Analytics
 graduated:
+projects:
+- cytosplore
 ---

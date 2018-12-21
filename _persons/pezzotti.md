@@ -11,5 +11,7 @@ organization: TU Delft
 position: PhD Student
 website: http://nicola17.github.io
 interests:
-graduated: 
+graduated:
+projects:
+- cytosplore
 ---

@@ -34,7 +34,7 @@ award:
 doi: 10.1021/acs.jproteome.7b00725
 publisher-url:
 
-project:
+projects:
 external-project:
 
 videos:

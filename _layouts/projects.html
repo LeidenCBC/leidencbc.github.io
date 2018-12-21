@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article class="publications-content">
+  {% for project in site.projects %}
+    {% include project_list_entry.html %}
+  {% endfor %}
+</article>

@@ -32,7 +32,9 @@ year: 2018
 
 doi: 10.1371/journal.pone.0200818
 
-project:
+projects:
+- cytosplore
+
 external-project:
 
 pdf: 2018_plos_circulating_t_cells.pdf

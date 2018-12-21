@@ -1,0 +1,19 @@
+<div class="row" style="margin-top:1rem;">
+  <div class="post-list-title col-md-12" style="font-size:1.15em;">{{ project.title }}</div>
+</div>
+<div class="row" style="margin-bottom: 2.5rem;">
+	<div class="paper-img-container col-md-3" style="padding-left: 0;">
+		<a href="{{ site.baseurl }}{{ project.url }}">
+			<img alt="{{ project.name }}"
+				class="paper-image-small"
+				style="width: 100%;"
+				src="{% if project.image %}{{ site.project_content_url }}/{{ project.key }}/{{ project.image }}{% endif %}">
+			</a>
+	</div>
+	<div class="paper-text-container col-md-9">
+    <div class="row">
+      <div class="post-list-excerpt">{{ project.short-text }}</div>
+      <a class="post-list-link" href="{{ site.baseurl }}{{ project.url }}">More...</a>
+    </div>
+	</div>
+</div>

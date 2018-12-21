@@ -40,7 +40,7 @@ award: Best Poster Award at WMS 2017
 doi: 10.1038/s41598-017-12981-5
 publisher-url:
 
-project:
+projects:
 external-project:
 videos:
 

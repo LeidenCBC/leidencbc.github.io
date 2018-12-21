@@ -18,11 +18,11 @@ authors:
 
 journal: Computational and Structural Biotechnology Journal
 journal-short: CSBJ
-page_start: 
-page_end: 
+page_start:
+page_end:
 chapter:
-volume: 
-issue: 
+volume:
+issue:
 year: 2018
 editor:
 publisher:
@@ -32,7 +32,8 @@ award:
 doi: 10.1016/j.csbj.2018.10.004
 publisher-url:
 
-project:
+projects:
+- cytosplore
 external-project:
 
 videos:

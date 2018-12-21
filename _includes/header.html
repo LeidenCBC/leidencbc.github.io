@@ -7,7 +7,7 @@
 
     <div class="collapse navbar-collapse" id="containerNavbar">
       <ul class="navbar-nav mr-auto">
-        {% assign navButtons = "home|team|publications|research" | split: "|" %}
+        {% assign navButtons = "home|team|publications|projects|research" | split: "|" %}
         {% for nav in navButtons %}
           {% assign navURL = "/" | append: nav | append: "/" %}
           {% assign pageURL = page.url %}
@@ -19,7 +19,6 @@
             <li class="nav-item active" id="{{ nav }}-button">
               <a class="nav-link" id="nav-current" href="{{ site.baseurl }}{{ navURL }}">{{ nav | upcase }}</a>
             </li>
-
           {% else %}
             <li id="{{ nav }}-button">
               <a  class="nav-link" href="{{ site.baseurl }}{{ navURL }}">{{ nav | upcase }}</a>
@@ -38,8 +37,8 @@
       </ul>
     </div>
     <a class="navbar-brand" href="https://www.lcbc.nl">
-      <img id="logo-header-wide" class="logo-header" src="{{ site.baseurl }}/assets/images/logos/logo_wide.png"</img>
-      <img id="logo-header-narrow" class="logo-header" src="{{ site.baseurl }}/assets/images/logos/logo_narrow.png"</img>
+      <img id="logo-header-wide" class="logo-header" src="{{ site.baseurl }}/assets/images/logos/logo_wide.svg"</img>
+      <img id="logo-header-narrow" class="logo-header" src="{{ site.baseurl }}/assets/images/logos/logo_narrow.svg"</img>
     </a>
   </div>
 </nav>
