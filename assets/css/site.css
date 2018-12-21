@@ -422,3 +422,9 @@ footer {
 .bg-faded {
     background-color: #f8f8f9;
 }
+
+.funding-img {
+    height: 50px;
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+}

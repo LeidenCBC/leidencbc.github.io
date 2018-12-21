@@ -12,7 +12,18 @@ layout: default
   {% endif %}
 {% endfor %}
 
-{% assign numInvolved = page.team.size %}
+{% assign numInvolved = 0 %}
+{% for person in site.persons %}
+  {% if person.role != "collaborator" %}
+    {% if person.projects %}
+      {% for p in person.projects %}
+        {% if p == page.key%}
+          {% assign numInvolved = numInvolved | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
 <h1>{{ page.title }}</h1>
 <div class="row paper-row">
@@ -27,16 +38,37 @@ layout: default
       <h2 style="margin-top: 2.5rem;">LCBC Team Members</h2>
       <hr/>
       <div class="row">
-        {% for member in page.team %}
-          {% for person in site.persons %}
-            {% if person.key == member%}
-              <div>
-                {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
-                  <div class="person-pic" style="margin-top: 1em; margin-right: 1em; background: url({{ person.image }});"></div>
-                {% if person.website %}</a>{% endif %}
-              </div>
-            {% endif %}
-          {% endfor %}
+        {% for person in site.persons %}
+          {% if person.role != "collaborator" %}
+            {% if person.projects %}
+              {% for p in person.projects %}
+                {% if p == page.key%}
+                <div style="align: center; margin-top: 1em; margin-right: 1em;">
+                  {% if person.website %}<a href="{{ person.website }}" target="_blank">{% endif %}
+                    <div class="person-pic" style="background: url({{ person.image }});"></div>
+                  {% if person.website %}</a>{% endif %}
+                  <span style="margin-top: 1em;">{{ person.first_name }} {{ person.last_name }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          {% endif %}
+      {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.funding.size > 0 %}
+      <h2 style="margin-top: 2.5rem;">Funding</h2>
+      <hr/>
+      <div class="row">
+        {% for funds in page.funding %}
+          {% if page.funding.size > 1 %}<div style="max-width: 45%; margin-right: 5%;">
+          {% else %}<div style="max-width: 100%;">{% endif %}
+            {% if funds.link %}<a href="{{ funds.link }}" target="_blank">{% endif %}
+              <img src="{{ funds.image }}" class="funding-img">
+            {% if funds.link %}</a>{% endif %}
+            <br/>
+            <span>{{ funds.description }}</span>
+          </div>
         {% endfor %}
       </div>
     {% endif %}

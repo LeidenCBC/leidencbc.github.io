@@ -6,19 +6,6 @@ key: cytosplore
 permalink: /projects/cytosplore/
 image: cytosplore.jpg
 
-# add core team members here with key or full name
-team:
-- hollt
-
-# list collaborators with key or full name here
-collaborators:
-- koning
-- vanunen
-- pezzotti
-- vilanova
-- lelieveldt
-- somarakis
-
 # Link to a potential external website
 external: https://www.cytosplore.org
 
@@ -27,6 +14,11 @@ videos:
 - 161594269
 - 205552113
 - 223373844
+
+funding:
+- link: https://www.nwo.nl/
+  image: /assets/images/funding/nwo.png
+  description: "Partial funding from NWO/STW project <a href='http://imagene.nl/vampire-project.html' target='_blank'>12720 VAnPIRe</a>"
 
 # Add any documents/resources you want to list here
 #documents:
@@ -57,11 +49,14 @@ student-projects:
   icon: far fa-file-pdf
 
 # Add a short description for the listing page here. keep it short to dont break the layout onm /projects
-short-text: "The Cytosplore project forms a research framework on interactive visual analysis of high-dimensional data. The core is the Cytosplore software. Besides its application to single-cell analysis the Cytosplore software is a robust and extensible visual analysis framework. This project combines basic methodological research with highly relevant applied research in single-cell analysis."
+short-text: "The Cytosplore project combines basic methodological research on visual analysis of high-dimensional data with highly relevant applied research in single-cell analysis.
+At the core of the project is the Cytosplore software, a publicly available, interactive and robust software for single-cell analysis."
 
 # longer description of the project used on top of the project page. use this for an extended abstract
-long-text: "The Cytosplore project forms a research framework on interactive visual analysis of high-dimensional data. The core is the Cytosplore software. Besides its application to single-cell analysis the Cytosplore software is a robust and extensible visual analysis framework. This project combines basic methodological research with highly relevant applied research in single-cell analysis."
+long-text: "The Cytosplore project forms a research framework on interactive visual analysis of high-dimensional data. The core is the Cytosplore software. Besides its application to single-cell analysis the Cytosplore software is a robust and extensible visual analysis framework for high-dimensional data. This project combines basic methodological research with highly relevant applied research in single-cell analysis."
 
 # if you need a more elaborate description add it below the --- here you can use the full markdown/kramdown spec and/or embed html
 ---
-Cytosplore is an interactive visual analysis system for understanding how the immune system works. The goal of the analysis framework is to provide a clear picture of the immune systems cellular composition and the cells’ corresponding properties and functionality. Cytosplore is targeted at the analysis of mass cytometry (CyTOF) data. Mass cytometry is a novel technique to determine the properties of single-cells with unprecedented detail. This amount of detail allows for much finer differentiation but also comes at the cost of more complex analysis. Cytosplore incorporates state-of-the art clustering and dimensionality reduction techniques. The inclusion of HSNE allows the exploration of millions of cells without the need for downsampling. Furthermore Cytosplore provides Approximated-tSNE (up to 100x faster than standard t-SNE without loss in precision) and a custom implementation of the SPADE clustering algorithm. Cytosplore implements progressive visual analytics and visualization techniques to provide a highly engaging user experience through direct feedback and linked views
+If you are a student looking for a possible internship or thesis topic, we have several open projects and possibilities. Please see the section on the right for specific projects, but other possibilities can always be discussed in person.
+The projects can range from fundamental to very applied and can be focused on gathering practical experience or research.
+Projects can be at LUMC or in collaboration with the [Computer Graphics and Visualization](https://graphics.tudelft.nl){:target="_blank_"} group at TU Delft.
