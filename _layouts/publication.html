@@ -246,5 +246,14 @@ layout: default
       {% endfor %}
     {% endif %}
 
+    {% if page.doi %}
+    <br/>
+    <div class="row paper-side-row">
+        <div data-badge-details="right" data-badge-type="donut" data-doi="{{page.doi}}" data-condensed="true" data-hide-no-mentions="true" data-hide-less-than="0" class="altmetric-embed"></div>
+    </div>
+    {% endif %}
+
   </div>
 </div>
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
