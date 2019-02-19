@@ -8,6 +8,7 @@ type: article
 shortname: Innate Lymphoid Differentiation
 image: 2018_exp_medicine.png
 image_large:
+special_image: "/assets/papers/2018_exp_medicine/cover.png"
 
 authors:
 - lina

@@ -6,11 +6,13 @@ layout: default
   <div class="col-md-8 paper-main">
     <p><span class="h2">Abstract:</span> {{ page.abstract }}</p>
 
+    {{ content }}
+
     {%if page.award %}
     <span class="award"><i class="far fa-gem"></i>&nbsp;{{ page.award }}</span>
     {% endif %}
 
-    <div id="accordion" role="tablist" aria-multiselectable="true" style="margin-top: 1rem">
+    <div id="accordion" role="tablist" aria-multiselectable="true" style="margin-top: 1rem; margin-bottom: 1rem;">
       <div class="card">
         <div class="card-header" role="tab" id="headingOne">
           <h2 class="mb-0">
@@ -183,12 +185,13 @@ layout: default
         </div>
       </div>
     </div>
-
-    {{ content }}
   </div>
 
-
   <div class="col-md-4">
+
+    {% if page.special_image %}
+        <img class="paper-side-row" alt="{{ page.award }}" style="width: 100%;" src="{{ page.special_image }}">
+    {% endif %}
 
     <img class="paper-side-row" alt="{{ page.shortname }} screenshot" style="width: 100%;" src="{% if page.image %}{{ site.paper_content_url }}/{{ page.key }}/{{ page.image }}{% else %}/assets/images/placeholder.png{% endif %}">
 
