@@ -33,7 +33,7 @@
               <div class="post-list-date col-sm-3">{{ post.date | date: "%-d %b %Y" }}</div>
             </div>
             <div class="row">
-              <div class="post-list-excerpt">{{ post.excerpt | truncatewords: 60 }}</div>
+              <div class="post-list-excerpt">{{ post.content | markdownify | truncatewords: 60 }}</div>
               <a class="post-list-link" href="{{ site.baseurl }}{{ post.url }}">More...</a>
             </div>
           </li>
