@@ -37,16 +37,19 @@
   [
     {% for publication in site.publications %}
 
-      {% if publication.image_large %}
-      {
-        "title"       : "{{ publication.title }}",
-        "key"         : "{{ publication.key }}",
-        "shortname"   : "{{ publication.shortname }}",
-        "url"         : "{{ publication.permalink }}",
-        "image_large" : "{{ publication.image_large }}",
-      }
+      {% if publication.year > 2016 %}
+
+        {% if publication.image_large %}
+        {
+          "title"       : "{{ publication.title }}",
+          "key"         : "{{ publication.key }}",
+          "shortname"   : "{{ publication.shortname }}",
+          "url"         : "{{ publication.permalink }}",
+          "image_large" : "{{ publication.image_large }}",
+        }
+        {% endif %}
+        {% if forloop.last %}{% else %},{% endif %}
       {% endif %}
-      {% if forloop.last %}{% else %},{% endif %}
 
     {% endfor %}
   ]
