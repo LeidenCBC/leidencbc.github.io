@@ -428,3 +428,30 @@ footer {
     margin-top: 1.0em;
     margin-bottom: 1.0em;
 }
+
+.__db_background {  
+    visibility: hidden;  
+}
+
+.__dimensions_badge_embed__, .__dimensions_badge_embed__ a, .__dimensions_badge_embed__ a:hover, .__dimensions_badge_embed__ div{
+  font: inherit !important;
+  font-size: 11pt !important;
+  line-height: 16pt !important;
+  font-weight: 200 !important;
+}
+
+.__dimensions_badge_embed__ .__dimensions_Badge_style_small_circle .__db_score {
+    font-size: 30px !important;
+  font-weight: 400 !important;
+}
+
+div[id^=_altmetric_popover_el].altmetric-embed div#_altmetric_container.altmetric_container div#_altmetric_popover_inner .altmetric-popover-content {
+  font: inherit !important;
+  font-size: 11pt !important;
+  line-height: 16pt !important;
+  font-weight: 200 !important;
+}
+
+.altmetric-condensed-legend {
+  margin-right: 20px !important;
+}
