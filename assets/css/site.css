@@ -95,6 +95,7 @@ nav {
   top: 74px;
   margin: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 .footer-link {
