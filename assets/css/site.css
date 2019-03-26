@@ -91,9 +91,9 @@ nav {
 }
 
 #nav-line {
-  position: fixed;
-  top: 74px;
-  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  margin-left: -16px;
   width: 100%;
   z-index: 9999;
 }
@@ -216,7 +216,7 @@ footer {
 
 #paper-carousel-container {
   position: fixed;
-  top: 75px;
+  top: 74px;
   width:100%;
   /*z-index: -1;*/
   
@@ -335,7 +335,10 @@ footer {
     margin-top: 0px;
   }
   #hero-spacer {
-    height: 20px;
+    height: 0px;
+  }
+  #hero-background {
+    margin-top: 0;
   }
 }
 
