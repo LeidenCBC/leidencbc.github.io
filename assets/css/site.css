@@ -7,6 +7,7 @@ body {
   line-height: 1.9em;
   font-weight:200;
   color: black;
+  padding-top: 50px;
 }
 
 a {
@@ -89,6 +90,14 @@ nav {
   }
 }
 
+#nav-line {
+  position: absolute;
+  bottom: 0px;
+  margin-left: -16px;
+  width: 100%;
+  z-index: 9999;
+}
+
 .footer-link {
   font-size: 0.7em;
   font-weight: 800;
@@ -105,22 +114,20 @@ nav {
 
 /* Carousel base class */
 .carousel {
-  margin-top: 3rem;
   margin-bottom: 0;
 }
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-  bottom: 3rem;
+.carousel-caption-inner {
+  z-index: 100;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 600px;
   background-color:white;
-  background-size: 64rem 32rem;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .carousel-indicators li{
@@ -136,20 +143,29 @@ nav {
   background-color: var(--lcbc-red);
 }
 
+.carousel-indicators {
+  top: 25px;
+  height: 10px;
+}
+
 .carousel-control-next, .carousel-control-prev {
   opacity: 0.75;
+  /*z-index: 9999;*/
 }
 
 .carousel-control-prev-icon {
+  margin-top: -200px;
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#E11932' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
 }
 
 .carousel-control-next-icon {
+  margin-top: -200px;
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#E11932' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
 }
 
 .carousel-caption {
   text-align:center !important;
+  top: 40px;
 }
 
 .carousel-caption-inner {
@@ -171,11 +187,11 @@ nav {
 }
 
 @media only screen and (max-width: 1199px) {
-  .carousel-item {
+  /*.carousel-item {
     height: 465px;
     width: 930px;
     background-size: 930px 465px;
-  }
+  }*/
 
   .carousel-caption-inner a {
     font-size: 1.4rem;
@@ -183,11 +199,11 @@ nav {
 }
 
 @media only screen and (max-width: 991px) {
-  .carousel-item {
+/*  .carousel-item {
     height: 345px;
     width: 690px;
     background-size: 690px 345px;
-  }
+  }*/
 
   .carousel-caption-inner a {
     font-size: 1.2rem;
@@ -196,6 +212,16 @@ nav {
 
 footer {
   margin-top: 20px;
+}
+
+#paper-carousel-container {
+  position: fixed;
+  top: 74px;
+  width:100%;
+  /*z-index: -1;*/
+  
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -273,6 +299,49 @@ footer {
   margin-bottom: 3rem;
 }
 
+#hero-wrap {
+  /*z-index: 2000;*/
+  position: relative;
+  margin-top: 250px;
+
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  background: white;
+  
+  margin-top: 0px;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#hero-spacer {
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(rgba(255,255,255,0.0), rgba(255,255,255,1.0));
+}
+
+#hero-background {
+  width: 100%;
+  margin-top: -48px;
+  margin-bottom: -48px;
+  background: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #hero-wrap {
+    margin-top: 0px;
+  }
+  #hero-spacer {
+    height: 0px;
+  }
+  #hero-background {
+    margin-top: 0;
+  }
+}
+
 .paper-text-container {
   font-size: 0.9em;
   line-height: 1.5em;
@@ -315,6 +384,13 @@ footer {
   .mobile-center {
     text-align: center;
   }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navbar-toggler {
