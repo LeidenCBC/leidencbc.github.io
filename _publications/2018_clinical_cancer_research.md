@@ -2,7 +2,7 @@
 layout: publication
 title: "The Anatomical Location Shapes the Immune Infiltrate in Tumors of Same Etiology and Impacts Survival"
 key: 2018_clinical_cancer_research
-date:   2018-09-10 12:00:00
+date:   2019-01-01 12:00:00
 permalink: /publications/2018_clinical_cancer_research/
 type: article
 shortname: Anatomical Location Shapes Immune Infiltrate
@@ -30,9 +30,9 @@ journal-short: Clin. Cancer Res.
 page_start:
 page_end:
 chapter:
-volume:
-issue:
-year: 2018
+volume: 25
+issue: 1
+year: 2019
 editor:
 publisher:
 school:
