@@ -18,10 +18,10 @@ authors:
 
 journal: Computational and Structural Biotechnology Journal
 journal-short: CSBJ
-page_start:
-page_end:
+page_start: 435
+page_end: 442
 chapter:
-volume:
+volume: 16
 issue:
 year: 2018
 editor:
