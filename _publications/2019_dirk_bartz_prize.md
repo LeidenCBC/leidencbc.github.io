@@ -30,9 +30,9 @@ year: 2019
 editor:
 publisher:
 school:
-award: Finalist, Dirk Bartz Prize for Visual Computing in Medicine 2019
+award: 1st Prize, Dirk Bartz Prize for Visual Computing in Medicine 2019
 
-doi: 
+doi: 10.2312/egm.20191032
 publisher-url:
 
 projects:
