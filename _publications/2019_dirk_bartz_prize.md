@@ -52,6 +52,12 @@ supplements:
   - name: "Website"
     abslink: https://www.cytosplore.org
     icon: archive
+  - name: Slides (pdf)
+    abslink: https://talks.thomashollt.com/2019/05_EGDBP/static.pdf
+    icon: powerpoint
+  - name: Slides (interactive)
+    abslink: https://talks.thomashollt.com/2019/05_EGDBP/interactive
+    icon: powerpoint
   - name: "Videos"
     abslink: https://vimeo.com/channels/cytosplore
     icon: video
