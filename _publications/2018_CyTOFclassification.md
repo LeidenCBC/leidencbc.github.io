@@ -2,9 +2,9 @@
 layout: publication
 title: "Predicting cell types in single cell mass cytometry data"
 key: 2018_cytof_classification
-date:   2018-05-07 00:00:00
+date:   2019-03-12 00:00:00
 permalink: /publications/2018_cytof_classification/
-type: preprint
+type: article
 
 shortname: CyTOF Classification
 
@@ -22,21 +22,21 @@ authors:
 - mahfouz
 
 
-journal: BioRxiv
-journal-short: BioRxiv
+journal: Cytometry Part A
+journal-short: Cytometry A
 page_start:
 page_end:
 chapter:
 volume:
 issue:
-year: 2018
+year: 2019
 editor:
 publisher:
 school:
 award:
 
-doi: 10.1101/316034
-publisher-url: https://www.biorxiv.org/content/early/2018/05/07/316034
+doi: 10.1002/cyto.a.23738
+publisher-url:
 
 project:
 external-project:
