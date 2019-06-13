@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Predicting cell types in single cell mass cytometry data"
+title: "Predicting cell populations in single cell mass cytometry data"
 key: 2018_cytof_classification
 date:   2019-03-12 00:00:00
 permalink: /publications/2018_cytof_classification/
