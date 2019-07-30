@@ -10,6 +10,6 @@ image: /assets/images/team/maurits.jpg
 organization: Leiden University Medical Center
 position: PhD Student
 website:
-interests:
+interests: Electronical Health Records
 graduated:
 ---
