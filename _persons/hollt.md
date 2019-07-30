@@ -14,4 +14,5 @@ interests: Visualization and Visual Analytics
 graduated:
 projects:
 - cytosplore
+- imagingcytometry
 ---
