@@ -9,7 +9,9 @@ email: a.somarakis@lumc.nl
 image: /assets/images/team/somarakis.jpg
 organization: Leiden University Medical Center / Leiden University
 position: PhD Student
-website:
+website: https://www.universiteitleiden.nl/en/staffmembers/antonios-somarakis
 interests: Visual Analytics for Spatial Omics
 graduated:
+projects:
+- imagingcytometry
 ---

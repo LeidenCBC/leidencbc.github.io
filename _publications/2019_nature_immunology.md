@@ -48,6 +48,7 @@ publisher-url:
 
 projects:
 - cytosplore
+- imagingcytometry
 
 external-project:
 
