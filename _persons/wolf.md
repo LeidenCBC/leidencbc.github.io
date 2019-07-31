@@ -11,5 +11,5 @@ organization: Leiden University Medical Center / TU Delft
 position: student
 website:
 interests: Omics Age Predictors
-graduated:
+graduated:  MSc, 2018
 ---
