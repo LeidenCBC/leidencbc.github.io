@@ -10,6 +10,6 @@ image: /assets/images/team/michielsen.jpg
 organization: TU Delft / Leiden University Medical Center
 position: student
 website:
-interests:
+interests: Single cell classification methods
 graduated:
 ---

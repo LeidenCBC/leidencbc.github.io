@@ -6,10 +6,10 @@ key: kick
 permalink: /persons/kick/
 role: msstudent
 email: F.L.kick@lumc.nl
-image: /assets/images/team/kick.png
+image:
 organization: Leiden University Medical Center
 position: student
 website:
-interests:
-graduated:
+interests: Single cell gene regulatory networks
+graduated: BSc, 2019
 ---

@@ -10,6 +10,6 @@ image: /assets/images/team/deraadt.png
 organization: Leiden University Medical Center
 position: student
 website:
-interests:
-graduated:
+interests: Scalable clustering methods
+graduated: BSc, 2019
 ---
