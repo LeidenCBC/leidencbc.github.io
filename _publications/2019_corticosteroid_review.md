@@ -21,7 +21,7 @@ authors:
 - meijer
 
 journal: Neuroendocrinology
-journal-short:
+journal-short: Neuroendocrinology
 page_start:
 page_end:
 chapter:
