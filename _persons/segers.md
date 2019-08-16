@@ -10,6 +10,6 @@ image: /assets/images/team/segers.png
 organization: Leiden University Medical Center
 position: student
 website:
-interests: Duchenne muscular dystrophy 
-graduated:
+interests: Duchenne muscular dystrophy
+graduated: MSc, 2019
 ---
