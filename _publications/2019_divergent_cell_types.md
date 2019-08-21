@@ -1,15 +1,16 @@
 ---
 layout: publication
 title: "Conserved Cell Types with Divergent Features Between Human and Mouse Cortex"
-key: 2018_divergent_cell_types
-date:   2018-06-08 00:00:00
-permalink: /publications/2018_divergent_cell_types/
-type: preprint
+key: 2019_divergent_cell_types
+date:   2019-08-21 00:00:00
+permalink: /publications/2019_divergent_cell_types/
+redirect_from: /publications/2018_divergent_cell_types/
+type: article
 
-shortname: Cytosplore MTG Viewer
+shortname: Cytosplore Viewer
 
-image: 2018_divergent_cell_types.png
-image_large: 2018_divergent_cell_types_teaser.png
+image: 2019_divergent_cell_types.png
+image_large: 2019_divergent_cell_types_teaser.png
 
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
@@ -77,29 +78,30 @@ authors:
 - Christof Koch
 - Ed S Lein
 
-journal: BioRxiv
-journal-short: BioRxiv
+journal: Nature
+journal-short: Nature
 page_start:
 page_end:
 chapter:
 volume:
 issue:
-year: 2018
+year: 2019
 editor:
 publisher:
 school:
 award:
 
-doi: 10.1101/384826
+doi: 10.1038/s41586-019-1506-7
 
 projects:
+- cytosplore
 external-project: https://viewer.cytosplore.org/
 
 videos:
 - 273182940
 - 273183030
 
-pdf: 2018_divergent_cell_types.pdf
+pdf: 2019_divergent_cell_types.pdf
 
 supplements:
   - name: "Video: Introduction"
