@@ -9,7 +9,7 @@ email: a.mahfouz@lumc.nl
 image: /assets/images/team/mahfouz.jpg
 organization: Leiden University Medical Center / TU Delft
 position: Assistant Professor
-website:
+website: https://ahmedmahfouz.github.io/
 interests: Single Cell Analysis
 graduated:
 ---
