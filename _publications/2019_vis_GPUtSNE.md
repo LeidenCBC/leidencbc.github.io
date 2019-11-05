@@ -3,7 +3,7 @@ layout: publication
 title: "GPGPU Linear Complexity t-SNE Optimization"
 key: 2019_vis_GPUtSNE
 date:   2019-08-01 12:00:00
-permalink: /publications/2019_vis_GPUtSNE_teaser/
+permalink: /publications/2019_vis_GPUtSNE/
 redirect_from: /publications/2018_arxiv_ttsne/
 type: article
 shortname: GPU t-SNE
