@@ -1,6 +1,6 @@
 {% for person in site.persons %}
 {% if person.graduated == null and include.role != "advisor" %}
-{% if person.key == include.key or person.role == include.role %}
+{% if person.key == include.key or (person.role != null and person.role == include.role) %}
 <div class="row person-container col-lg-6">
   {% capture name %}{{ person.first_name }} {{ person.last_name }}{% endcapture %}
 
