@@ -16,3 +16,5 @@ _publications/2017_test_preprint.md
 _publications/2017_test_msc.md
 _publications/2017_test_proc.md
 .DS_Store
+/Gemfile.lock
+/.jekyll-cache
