@@ -4,11 +4,11 @@ first_name: Mohammed
 last_name: Charrout
 key: charrout
 permalink: /persons/charrout/
-role: msstudent
-email:
+role: phdstudent
+email: m.charrout@tudelft.nl
 image: /assets/images/team/charrout.jpg
 organization: TU Delft / Leiden University Medical Center
-position: student
+position: PhD Student
 website:
 interests: Single cell trajectory inference
 graduated:

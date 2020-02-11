@@ -10,6 +10,6 @@ image: /assets/images/team/keo.png
 organization: Leiden University Medical Center / TU Delft
 position: PhD Student
 website:
-interests:
+interests: Imaging genetics
 graduated:
 ---

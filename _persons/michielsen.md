@@ -4,7 +4,7 @@ first_name: Lieke
 last_name: Michielsen
 key: michielsen
 permalink: /persons/michielsen/
-role: msstudent
+role: phdstudent
 email: L.C.M.Michielsen@lumc.nl
 image: /assets/images/team/michielsen.jpg
 organization: TU Delft / Leiden University Medical Center

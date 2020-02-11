@@ -1,11 +1,11 @@
 ---
 layout: publication
-title: "12 Grand challenges in single-cell data science"
-key: 2019_singlecellchallenges_preprint
-date:   2019-08-07 00:00:00
-permalink: /publications/2019_singlecellchallenges_preprint/
-type: preprint
-
+title: "Eleven Grand challenges in single-cell data science"
+key: 2019_singlecellchallenges
+date:   2020-02-07 00:00:00
+permalink: /publications/2019_singlecellchallenges/
+type: article
+redirect_from: /publications/2019_benchmark_preprint/
 shortname: Single cell data science challenges
 
 image: 2019_singlecellchallenges_preprint.jpg
@@ -65,20 +65,20 @@ authors:
 - Sohrab P Shah
 - Alexander Schönhuth​
 
-journal: PeerJ Preprints
-journal-short: PeerJ Preprints
+journal: Genome Biology
+journal-short: Genome Biol
 page_start:
 page_end:
 chapter:
 volume:
 issue:
-year: 2019
+year: 2020
 editor:
 publisher:
 school:
 award:
 
-doi: 10.7287/peerj.preprints.27885v2
+doi: doi.org/10.1186/s13059-020-1926-6
 
 projects:
 external-project:
@@ -89,10 +89,6 @@ pdf: 2019_singlecellchallenges_preprint.pdf
 
 supplements:
 
-abstract: "The recent upswing of microfluidics and combinatorial indexing strategies, further enhanced by very low sequencing costs, have turned single cell sequencing into an empowering technology; analyzing thousands—or even millions—of cells per experimental run is becoming a routine assignment in laboratories worldwide. As a consequence, we are witnessing a data revolution in single cell biology. Although some issues are similar in spirit to those experienced in bulk sequencing, many of the emerging data science problems are unique to single cell analysis; together, they give rise to the new realm of 'Single Cell Data Science'.
-
-Here, we outline twelve challenges that will be central in bringing this new field forward. For each challenge, the current state of the art in terms of prior work is reviewed, and open problems are formulated, with an emphasis on the research goals that motivate them.
-
-This compendium is meant to serve as a guideline for established researchers, newcomers and students alike, highlighting interesting and rewarding problems in 'Single Cell Data Science' for the coming years."
+abstract: "The recent boom in microfluidics and combinatorial indexing strategies, combined with low sequencing costs, has empowered single-cell sequencing technology. Thousands-or even millions-of cells analyzed in a single experiment amount to a data revolution in single-cell biology and pose unique data science problems. Here, we outline eleven challenges that will be central to bringing this emerging field of single-cell data science forward. For each challenge, we highlight motivating research questions, review prior work, and formulate open problems. This compendium is for established researchers, newcomers, and students alike, highlighting interesting and rewarding problems for the coming years."
 
 ---
