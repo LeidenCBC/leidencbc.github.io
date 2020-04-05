@@ -10,6 +10,6 @@ image: /assets/images/team/abdelaal.jpg
 organization: TU Delft / Leiden University Medical Center
 position: PhD Student
 website:
-interests:
+interests: single cell data analysis
 graduated:
 ---
