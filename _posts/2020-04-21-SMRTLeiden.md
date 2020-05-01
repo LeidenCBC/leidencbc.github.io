@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SMRTLeiden Online Conference
-date:   2019-07-16 00:00:00
+date:   2020-07-16 00:00:00
 author: mahfouz
 categories: press
 ---
