@@ -6,7 +6,7 @@ key: khatri
 permalink: /persons/khatri/
 role: postdoc
 email: i.khatri@lumc.nl
-image: /assets/images/team/khatri.png
+image: /assets/images/team/khatri.jpg
 organization: Leiden University Medical Center
 position: postdoc
 website:
