@@ -8,7 +8,7 @@ type: article
 
 shortname: India_metagenome
 
-image: 2020_India_metagenome.jpg
+image: 2020_India_metagenome.png
 image_large:
 
 

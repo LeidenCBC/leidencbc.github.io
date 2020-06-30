@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "A transcriptomics-based meta-analysis combined with machine learning approach identifies a secretory biomarker panel for diagnosis of pancreatic adenocarcinoma"
-key: 2020_pmIG_preprint
+key: 2020_ML_PDAC_preprint
 date:   2020-04-22 00:00:00
 permalink: /publications/2020_ML_PDAC_preprint/
 type: preprint

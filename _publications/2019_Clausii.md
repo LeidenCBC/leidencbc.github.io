@@ -2,8 +2,8 @@
 layout: publication
 title: "Composite Genome Sequence of Bacillus Clausii, a Probiotic Commercially Available as Enterogermina ®, and Insights Into Its Probiotic Properties"
 key: 2019_Clausii
-date:   2019-30-12 00:00:00
-permalink: /publications/2019_SysBio_PDAC/
+date: 2019-12-30 00:00:00
+permalink: /publications/2019_Clausii/
 type: article
 
 shortname: Clausii

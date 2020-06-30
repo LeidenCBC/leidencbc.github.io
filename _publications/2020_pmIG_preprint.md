@@ -8,7 +8,7 @@ type: preprint
 
 shortname: pmIG
 
-image: 2020_pmIG_preprint.jpg
+image: 2020_pmIG_preprint.png
 image_large:
 
 
