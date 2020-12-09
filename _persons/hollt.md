@@ -5,9 +5,9 @@ last_name: Höllt
 key: hollt
 permalink: /persons/hollt/
 role: faculty
-email: t.hoellt@lumc.nl
+email: t.hollt-1@tudelft.nl
 image: /assets/images/team/hollt.jpg
-organization: Leiden University Medical Center / TU Delft
+organization: TU Delft / Leiden University Medical Center
 position: Assistant Professor
 website: http://www.thomashollt.com
 interests: Visualization and Visual Analytics

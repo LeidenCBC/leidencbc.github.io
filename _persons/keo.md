@@ -11,5 +11,5 @@ organization: Leiden University Medical Center / TU Delft
 position: PhD Student
 website:
 interests: Imaging genetics
-graduated:
+graduated: PhD, 2020
 ---
