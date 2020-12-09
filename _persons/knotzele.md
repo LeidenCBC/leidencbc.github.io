@@ -11,5 +11,5 @@ organization: Leiden University Medical Center
 position: student
 website:
 interests: Mechanisms of memory consolidation
-graduated:
+graduated: MSc, 2019
 ---

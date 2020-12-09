@@ -24,7 +24,7 @@ authors:
 - Szymon M Kiełbasa
 - Rob G H H Nelissen
 - reinders
-- Ingrid Meulenbelt1
+- Ingrid Meulenbelt
 
 journal: Annals of the Rheumatic Diseases
 journal-short: Ann Rheum Dis.
