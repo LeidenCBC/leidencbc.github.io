@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "Guidelines for the use of flow cytometry and cell sorting in immunological studies (second edition)"
+title: "Guidelines for the Use of Flow Cytometry and Cell Sorting in Immunological Studies (Second Edition)"
 key: 2019_cytometry_guidelines
 date:
 -  2019-10-21 12:00:00

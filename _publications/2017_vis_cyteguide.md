@@ -46,10 +46,10 @@ pdf: 2017_vis_cyteguide.pdf
 supplement:
 supplements:
   - name: Slides (pdf)
-    abslink: https://www.lcbc.nl/assets/papers/2017_vis_cyteguide/2017_vis_cyteguide_slides.pdf
+    link: 2017_vis_cyteguide_slides.pdf
     icon: powerpoint
   - name: Slides (interactive)
-    abslink: https://www.lcbc.nl/assets/papers/2017_vis_cyteguide/2017_vis_cyteguide_slides
+    link: 2017_vis_cyteguide_slides/
     icon: powerpoint
   - name: Video
     abslink: https://vimeo.com/223373844

@@ -25,12 +25,12 @@ authors:
 
 journal: Gut
 journal-short: Gut
-page_start: 
-page_end: 
+page_start: 691
+page_end: 703
 chapter:
-volume: 
+volume: 69
 issue: 
-year: 2019
+year: 2020
 editor:
 publisher:
 school:
@@ -52,15 +52,15 @@ supplements:
   - name: Samples and patient characteristics
     link: 2019_gut_antitumor_supptable.pdf
     icon: archive
-  - name: Supplementary tables and figures
+  - name: Supplementary Figures
     link: 2019_gut_antitumor_suppfigures.pdf
     icon: archive
-  - name: Supplementary methods
+  - name: Methods
     link: 2019_gut_antitumor_suppmethods.pdf
     icon: archive
 code:
 
-abstract: "<br><strong>Objective</strong> A comprehensive understanding of anticancer immune responses is paramount for the optimal application and development of cancer immunotherapies. We unravelled local and systemic immune profiles in patients with colorectal cancer (CRC) by high-dimensional analysis to provide an unbiased characterisation of the immune contexture of CRC.
+abstract: "<strong>Objective</strong> A comprehensive understanding of anticancer immune responses is paramount for the optimal application and development of cancer immunotherapies. We unravelled local and systemic immune profiles in patients with colorectal cancer (CRC) by high-dimensional analysis to provide an unbiased characterisation of the immune contexture of CRC.
 <br>
 <strong>Design</strong> Thirty-six immune cell markers were simultaneously assessed at the single-cell level by mass cytometry in 35 CRC tissues, 26 tumour-associated lymph nodes, 17 colorectal healthy mucosa and 19 peripheral blood samples from 31 patients with CRC. Additionally, functional, transcriptional and spatial analyses of tumour-infiltrating lymphocytes were performed by flow cytometry, single-cell RNA-sequencing and multispectral immunofluorescence.
 <br>

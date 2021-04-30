@@ -1,6 +1,6 @@
 ---
 layout: default
-first_name: Antonis
+first_name: Antonios
 last_name: Somarakis
 key: somarakis
 permalink: /persons/somarakis/
