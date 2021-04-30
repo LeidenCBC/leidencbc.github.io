@@ -80,10 +80,10 @@ authors:
 
 journal: Nature
 journal-short: Nature
-page_start:
-page_end:
+page_start: 61
+page_end: 68
 chapter:
-volume:
+volume: 573
 issue:
 year: 2019
 editor:

@@ -22,12 +22,12 @@ authors:
 
 journal: Journal of Autoimmunity
 journal-short: Journal of Autoimmunity
-page_start:
+page_start: 102361
 page_end:
 chapter:
-volume: 2
-issue: 102361
-year: 2019
+volume: 107
+issue: 
+year: 2020
 editor:
 publisher:
 school:

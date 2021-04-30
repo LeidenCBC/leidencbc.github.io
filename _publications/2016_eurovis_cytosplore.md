@@ -15,6 +15,7 @@ shortname: Cytosplore
 image: 2016_eurovis_cytosplore.jpg
 # add a 2:1 aspect ratio teaser figure (e.g., width: 1200px, height: 600px) to the folder /assets/images/papers/
 image_large: 2016_eurovis_cytosplore_teaser.png
+image_preview: 2016_eurovis_cytosplore.png
 
 # Authors in the "database" can be used with just the key (lastname). Others can be written properly.
 authors:
@@ -54,8 +55,8 @@ doi: 10.1111/cgf.12893
 # The publisher URL - use only if no doi is available
 publisher-url:
 
-# Use if this paper is linked to internal projects. This will link to and list it on the project site
-projects:
+# Use if this paper is linked to an internal project. This will link to the project site (not used right now)
+project:
 - cytosplore
 
 # Use this if you have an external project website
@@ -73,7 +74,7 @@ supplement:
 # Extra supplements, such as talk slides, data sets, etc. If you want videos from above show up in the list add the links here again with a name and video icon
 supplements:
   - name: Presentation Slides
-    abslink: https://www.thomashollt.com/assets/papers/hollt_eurovis_2016/eurovis16_Cytosplore_Interactive_Immune_Cell_Phenotyping_for_Large_Single-Cell_Datasets_slides.pdf
+    link: eurovis16_Cytosplore_Interactive_Immune_Cell_Phenotyping_for_Large_Single-Cell_Datasets_slides.pdf
     icon: image
   - name: Video
     abslink: https://vimeo.com/161594269

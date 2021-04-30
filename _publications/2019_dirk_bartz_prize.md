@@ -30,7 +30,7 @@ year: 2019
 editor:
 publisher:
 school:
-award: 1st Prize, Dirk Bartz Prize for Visual Computing in Medicine 2019
+award: 1<sup>st</sup> Prize, Dirk Bartz Prize for Visual Computing in Medicine 2019
 
 doi: 10.2312/egm.20191032
 publisher-url:
@@ -51,7 +51,7 @@ supplement:
 supplements:
   - name: "Website"
     abslink: https://www.cytosplore.org
-    icon: archive
+    icon: fas fa-globe
   - name: Slides (pdf)
     abslink: https://talks.thomashollt.com/2019/05_EGDBP/static.pdf
     icon: powerpoint

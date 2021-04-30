@@ -48,6 +48,9 @@ videos:
 pdf: 2017_hsne.pdf
 supplement: 2017_hsne_preprint_supplemental.pdf
 supplements:
+- name: Slides (BioVis)
+  link: 2018_hsne_biovis.pdf
+  icon: powerpoint
 - name: Video
   abslink: https://vimeo.com/205552113
   icon: video
